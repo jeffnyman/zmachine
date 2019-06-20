@@ -1,0 +1,201 @@
+To:	Dungeon Players
+From:	"The Translator"
+Subj:	Revision Log, V3.1 to V3.2B
+Date:	8-Dec-94
+
+This document provides a revision log for all changes between Dungeon
+V3.1 and V3.2B.
+
+
+DPARAM.FOR
+
+1. Added COUNT verb.
+2. Added COKES object.
+3. Added LDOOR object.
+4. Added GBROCH object.
+5. Moves GLOBAL check fence above granite wall.
+6. Added SHOUS room.
+7. Added FORE2 room.
+8. Added HEADS object.
+9. Added DIGBT, deleted SLEPBT.
+10. Added PLEAK object.
+11. Deleted FILLW verb.
+12. Increased buzz word array size.
+
+DUNGEON.F
+
+1. Changed version to 3.2B.
+
+GAME.F
+
+1. Changed IDATE, ITIME calls for VMS/UNIX compatibility.
+2. Changed random number initialization for greater randomization.
+3. Changed punctuation in TELL ME.
+4. Fixed bug in TELL "command" parser failure report.
+
+PARSER.F
+
+1. Added BLESSING to object vocabulary.
+2. Added COUNT to verb vocabulary.
+3. Fixed ALL BUT.
+4. Fixed subcript error in THISIT called from TAKEIT.
+5. Fixed GWIM problem in SWING SWORD.
+6. Fixed PLAY x WITH y.
+7. Added CORPSES to object vocabulary.
+8. Added SPIRITS to object vocabulary.
+9. Added OUTPUT to object vocabularly.
+10. Added CLIFFS to object vocabularly.
+11. Added JEWELS to object vocabulary.
+12. Added ZORKMID to object vocabulary (qualifies coin, bills).
+12. Coded HOLE as synonym for KEYHOLE.
+14. Coded WEST, WESTERN as adjectives for living room door.
+15. Fixed bug with STACK (present twice).
+16. Fixed bug with SWITCH (coded as synonym for LLD gate).
+17. Fixed bug with ROCK (coded as painting instead of statue).
+18. Fixed bug with endgame beam of light (coded as locked door).
+19. Fixed IT object to snarf orphan object if available.
+20. Fixed error reporting for IT object.
+21. Made BLIND a synonym for POKE rather than STRIKE.
+22. Made PERUSE a synonym for READ (fill array slot).
+23. Changed POUR to GWIM drinks (ie, water).
+24. Fixed bugs in SYNMCH for direct-as-indirect case.
+25. Fixed don't have message for non-players.
+26. Changed DIG to GWIM diggable objects (eg, sand).
+27. Fixed bug in PUMP UP.
+28. Added AM, ARE to buzz words.
+
+VERBS.F
+
+1. Fixed undefined ODO/I2 values if object out of range.
+2. Added COUNT (including count coins).
+3. Fixed FILL x WITH WATER.
+4. Fixed UNTIE ROPE FROM.
+5. Removed CLOSE from QUIT.
+6. Fixed INCANT to conform to MDL source.
+7. Fixed INCANT to work bidirectionally.
+8. Fixed ANSWER to not restart if maximum wrong answers exceeded.
+9. Fixed ANSWER to not continue if quiz completed.
+10. Fixed DROP collective to work in the dark.
+11. Fixed TAKE/PUT collective to look in vehicle if aboard.
+12. Added entry test from PUZZLE ANTEROOM to PUZZLE.
+13. Fixed subscript range error in PLAY.
+14. Fixed subscript range error in LEAP.
+15. Fixed "can't turn" turnable object in SPIN.
+16. Fixed SHAKE global WATER.
+17. Fixed SHAKE vehicle.
+18. Fixed SHAKE when not carrying.
+19. Restricted POUR (like POUR ON) to WATER.
+20. Fixed POUR WATER IN y to behave like PUT WATER in y.
+21. Fixed GIVE to not silently drop objects.
+22. Added FEEL as synonym for RUB etc in quiz answers.
+23. Added 30,003 as synonym for 30003 in quiz answers.
+24. Fixed BURN in receptacle to test for burnable.
+25. Fixed already have message for non-players.
+26. Fixed don't have message for non-players.
+27. Fixed load too heavy message for non-players.
+28. Replaced WEIGHT with WEIGHR.
+29. Deleted SLEPBT test from ALARM.
+30. Fixed formatting in INCANT "phrase".
+31. Added missing declaration in collectives.
+32. Fixed INFLATE x WITH BOAT.
+33. Fixed FILL x WITH y general case.
+
+OBJECTS.F
+
+1. Fixed undefined ODO/I2 values if object out of range.
+2. Fixed subscript error if in vehicle and direction.
+3. Fixed vampire bat to stop command string if transported.
+4. Added additional verbs to list of offenses against heads.
+5. Added KICK BUCKET trap.
+6. Fixed KILL WITH MASTER.
+7. Added SHAKE BOTTLE processing.
+8. Fixed bug to prevent tieing rope to both railing and timber.
+9. Fixed message about tieing to rope while carrying.
+10. Fixed message about rope dropping into Puzzle Room.
+11. Added altered rope description if balloon tied.
+12. Added FIND/EXAMINE of braided rope, receptacle, cloth bag.
+13. Added trap to coke bottles.
+14. Fixed intermittent door closing when dial button pressed.
+15. Fixed global brochure present problems.
+16. Fixed granite wall not in slide room.
+17. Restore granite wall pun.
+18. Fixed bug in THROW x IN WELL.
+19. Fixed message if palantir vision with receiving sphere in same room.
+20. Fixed bug in PUT WATER IN SLIDE.
+21. Fixed bug in PUT WATER IN WELL.
+22. Fixed bug in THROW WATER AT STOVE.
+23. Changed STOVE to conform to MDL sources.
+24. Fixed bug in THROW x AT BOTTLE.
+25. Fixed bug in THROW x AT LAMP.
+26. Fixed bug in THROW LAMP at y while up a tree.
+27. Fixed bug in BURN LEAVES while up a tree.
+28. Fixed bug with IT following LAMP/broken LAMP substitution.
+29. Fixed bug with IT following raised/lowered BASKET substitution.
+30. Fixed bug with IT following inflated/deflated/holed BOAT substitution.
+31. Fixed bug with IT following intact/broken EGG substitution.
+32. Fixed bug with IT following hot/cool BELL substitution.
+33. Fixed TAKE WATER not from bottle, player and non-player.
+34. Fixed bug in GIVE WATER TO THIEF.
+35. Added ALARM, KICK unconscious troll processing.
+36. Added ALARM, KICK unconscious thief processing.
+37. Fixed PLUG x WITH LEAK.
+38. Fixed OPEN x WITH BLACK BOOK.
+39. Fixed KILL x WITH ME.
+40. Removed special case processing for FILL x WITH WATER.
+
+ROOMS.F
+
+1. Fixed probability of candles blowing out if bad luck in CAVE2.
+2. Removed CLOSE from NIRVANA exit.
+3. Fixed vampire bat to stop command string if transported.
+4. Fixed bug about water in slide.
+5. Added PUZZLE ANTEROOM conditional description.
+6. Fixed bug when robot enters flipped MAGNET ROOM.
+7. Fixed SHAKE open object while up a tree.
+8. Fixed bug with IT following intact/broken EGG substitution.
+9. Fixed bug with IT following cool/hot BELL substitution.
+
+TIMEFNC.F
+
+1. Change fight demon to disengross thief if attacked.
+2. Added COUNT and RUB to list of disallowed actions if dead.
+3. Fixed bug in lighting description if dead.
+4. Added 'If you wish' reply to many master commands.
+5. Fixed message if thief discards cruft from his bag.
+6. Fixed bugs with IT following intact/broken BALLOON substitution.
+7. Fixed bug with IT following hot/cool BELL substitution.
+8. Removed THROW from list of allowed robot actions.
+9. Fixed thief demon to not rob silently in lit rooms.
+10. Fixed thief demon to not steal water.
+
+SUBR.F
+
+1. Fixed description of Land Of Living Dead if killed and exorcism done.
+2. Added granite wall to GHERE tests.
+3. Removed CLOSE from killed too many times exit.
+4. Fixed bug in list used to scatter objects when killed.
+5. Fixed bug in SCORE for negative scores.
+6. Fixed bug in FWIM for multiroom objects.
+7. Fixed bug in WEIGHT for contained objects, changed name to WEIGHR.
+
+DTEXT.TXT
+
+1. Added COFFIN-CURE tests to RAVINE1, CRAWL1, CANYON1.
+2. Added LAUNCH to POT OF GOLD.
+3. Fixed tests in MIRROR G.
+4. Added conditional entry to PUZZLE from ANTEROOM.
+5. Added CLIMBABLE to ROPE.
+6. Added FINDME bit to BROKEN STICK.
+7. Added object processor to RECEPTACLE and CLOTH BAG.
+8. Added BURNABLE to colored books.
+9. Added SACRED to WARNING.
+10. Added CLIMBABLE to global ROPE.
+11. Added SACRED to CAGED (inside cage) room.
+12. Added SACRED to UP A TREE room.
+13. Fixed message about lamp being broken.
+14. Fixed messages about water evaporating.
+15. Added FINDME bit to ROBOT.
+16. Added CHIMNEY object.
+17. Added LAND to all volcano rooms.
+18. Added LAND to RIVER2.
+19. Added DIGBT to SAND, GUANO, global GROUND.

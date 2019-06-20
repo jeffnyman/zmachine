@@ -1,0 +1,70 @@
+To:	Dungeon Players
+From:	"The Translator"
+Subj:	Game Hints
+Date:	1-Jan-90
+
+This document provides hints about V3.x of Dungeon.
+
+Dungeon is a development prototype of the game ZORK(tm), which is
+available commercially from Infocom, Inc, on most personal computers.
+Copyright on the Dungeon sources is retained by Infocom, and commercial
+use is strictly prohibited.  ZORK(tm) is a trademark of Infocom, Inc.
+
+Over the last decade, Dungeon Maintenance has received hundreds of
+letters requesting maps, clues, hints, or other forms of relief from
+the game's many frustrations.  No maps are available, and requests for
+hints have generally received only cryptic responses.  The following
+are the most frequently asked questions, and the most frequently sent
+answers:
+
+1.  How do I open the egg?
+
+    You cannot open the egg; perhaps someone else can.
+
+2.  How do I enter Hades?
+
+    You must first exorcise the demons; are you properly equipped?
+
+3.  How do I get the platinum bar?
+
+    You must disable the echo.
+
+4.  How do I pass the glacier?
+
+    The glacier swells with heat.  Have you found anything fiery?
+
+5.  How do I work the well?
+
+    If the well won't bring you water, you could try bringing water
+    to the well.
+
+6.  How do I recover a treasure from the gnome, or the gold card
+    from the Puzzle Room slot?
+
+    You can't.  In general, the CORRECT solution to a problem NEVER
+    requires the surrender of a treasure.
+
+7.  How do I work the rainbow?
+
+    Have you tried your magic wand?  Have you FOUND your magic wand?
+
+8.  What good is the barrel?
+
+    The barrel is for joy riders.  If you have always wanted to go for
+    a ride in a barrel, try "Geronimo".
+
+9.  How does the Bank of Zork work?
+
+    The Bank of Zork is built on illusions.  Walls are one of the key
+    illusions.
+
+10. How do I get to the endgame?
+
+    You must win the main game (get all possible points).
+
+and in honor of V3.0:
+
+11. How do I get the last point?
+
+    Have you availed yourself of ALL opportunities for intellectual
+    improvement?

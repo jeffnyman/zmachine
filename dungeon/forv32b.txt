@@ -1,0 +1,85 @@
+Sources changes for V3.2B of Dungeon after release
+
+1. DPARAM.FOR.  Change buzzword maximum from 10 to 12, add definition of
+   Alice Room Leak object, delete FILLW definition
+
+>>	PARAMETER (BWMAX=12)			! buzzword vocabulary
+
+   (insert in object definitions)
+
+>>	PARAMETER (PLEAK=191)			! Alice room leak
+
+   (delete the following)
+
+>>	PARAMETER (FILLW=134)			! fill
+
+2. DUNGEON.F.  Change edit number from A to B
+
+>>	DATA VMAJ/3/,VMIN/2/,VEDIT/'B'/
+
+3. PARSER.F.  Add "am" and "are" to buzzword list
+
+>>	DATA BWORD/'BY','IS','A','AN','THE','AM','ARE',
+	1	'TODAY','MY','YOUR','OUR','HIS'/
+
+4. PARSER.F.  Fix encoding of PUMP UP verb
+
+        DATA (VVOC(I),I=451,654) /
+        1 7,'60212'O,'21000'O,0,'200'O,'44002'O,0,'1000'O,
+        1 25,'42223'O,'41000'O,'400'O,0,
+        1       '60223'O,'41000'O,'400'O,0,'61005'O,-1,-1,
+        1       '60223'O,'41000'O,'400'O,0,'61016'O,-1,-1,
+        1       '60240'O,'41000'O,'400'O,0,'61012'O,-1,-1,
+>>	1 4,'40232'O,'60007'O,-1,-1,
+
+
+5. VERBS.F.  VALUAC missing declaration of NOTHIS as LOGICAL
+
+>>	LOGICAL LIT,F,F1,TAKE,PUT,DROP,NOTHIS,NOHERE,QHERE,QBUNCH
+
+6. VERBS.F.  Boats respond to INFLATE x WITH BOAT.  INFLATE should check
+   that indirect object is a tool
+
+>>2000	IF((OFLAG1(PRSI).AND.TOOLBT).NE.0) GO TO 2100	! tool?
+>>	CALL RSPSUB(301,ODI2)				! no, joke.
+>>	RETURN
+C
+>>2100	IF(.NOT.OBJACT(X)) CALL RSPEAK(368)	! obj handle?
+	RETURN
+
+7. VERBS.F.  FILL x WITH y should be treated as PUT y IN x, all cases;
+   otherwise, PUT PUTTY IN TUBE fails, but FILL TUBE WITH PUTTY works
+
+>>34025	PRSI=GWATE				! use global water.
+>>34050	PRSA=PUTW
+	I=PRSO					! fill x with y becomes
+	PRSO=PRSI				! put y in x
+	PRSI=I
+	VAPPLI=PUT(.TRUE.)
+	RETURN
+
+8. OBJECTS.F.  Delete WATER object code for FILL, now handled by verb
+
+5000    IF(PRSA.NE.GTHROW) GO TO 5025           ! go through?
+        CALL RSPEAK(331+RND(3))                 ! joke.
+        RETURN
+C
+>>5025	IF((PRSO.EQ.WATER).OR.(PRSO.EQ.GWATE)) GO TO 5100
+	CALL RSPEAK(561)                        ! water is ind obj,
+	RETURN                                  ! punt.
+
+9. OBJECTS.F.  KILL/DESTROY x WITH ME kills me, should not be handled by
+   player object
+
+>>55200	IF(((PRSA.NE.KILLW).AND.(PRSA.NE.MUNGW))
+>>	1	.OR.(PRSO.NE.OPLAY)) GO TO 10
+
+10. OBJECTS.F.  OPEN x with BLACK BOOK gives joke open black book open,
+   should not be handled by book object
+
+>>18000	IF((PRSA.NE.OPENW).OR.(PRSO.NE.BOOK)) GO TO 18100       ! open book?
+
+11. OBJECTS.F.  PLUG x WITH LEAK works, should not be handled by Alice room
+   leak object (dam leak is correct)
+
+>>35100	IF((PRSA.NE.PLUGW).OR.(PRSO.NE.PLEAK)) GO TO 10	! plug leak?

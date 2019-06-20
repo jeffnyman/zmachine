@@ -1,0 +1,370 @@
+Article: 5217
+From: horowitz@panix.com (David Horowitz)
+Newsgroups: rec.games.int-fiction
+Subject: Dungeon 3.1 Walkthrough.
+Date: 23 Sep 1994 16:45:20 -0400
+Organization: PANIX Public Access Internet and Unix, NYC
+ 
+ 
+This version has been updated for version 3.1 of Dungeon.
+ 
+ 
+ 
+Welcome to Dungeon.
+ 
+There are many variables in this game that are difficult to 
+account for in a walkthrough.  Your best defense against an 
+unwelcome surprise is to save the game often.  I suggest you 
+save at the end of each paragraph. Unfortunately, each time you 
+save your game it destroys the previous save file.  If you run 
+into the thief just move away from him.  If he steals your  
+treasures, don't worry, you'll get them back.  Okay, here we 
+go. . .
+ 
+You are at the west of a boarded up white house.  Go south, and 
+then east to the back of the house.  Open the window.  Go east 
+into the forest.  Move the pile of leaves.  This reveals a 
+locked grate.  Leaving the grate alone, or opening it will make 
+no difference in the game.  Go west, here you will find a tree 
+with a low branch.  Climb the tree, and take the egg from the 
+nest.  Climb down and go East, South, North, and East.  You 
+have returned to the back of the house.  Enter the house.  You 
+are in a kitchen.  On the table is a bottle and a sack.  Just 
+take the bottle, and go west to the living room.  Take the 
+sword and the lamp.  Move the rug, and open the trap door. Turn 
+on your lamp, and go down into the dungeon.
+ 
+You are in a cellar, and it looks like there is no way to go 
+back.  Go east to the troll room.  Oh no, a nasty troll!  Kill 
+troll with sword.  If the troll does not die with the first 
+blow, do it again.  There is a chance that the troll may kill 
+you.  If he does kill you, restore your game and try again.
+ 
+Once you have disposed of the troll drop the sword and go north 
+and then east to the Round Room. This is one of the more 
+annoying places in the game.  The room is a turning. The first 
+thing we need to do is stop it!  Until we do stop it from 
+spinning any direction you enter will send you to a random 
+place.  Your goal is to find the Engravings Cave.  Here are a 
+set of directions to return you to the Round Room.  If you see 
+a treasure along the way, just leave it we will come back later 
+to retrieve it. (Assuming the thief does not steal it.  And if 
+he does, you'll still get it back later.)  Keep trying  
+different directions until you enter the Engravings Cave.
+ 
+	(1) Deep Canyon         --> South
+	(2) Grail Room          --> West
+	(3) North-South Passage --> Northeast, Up, East, South, South
+	(4) East-West Passage   --> East     
+	(5) Winding Passage     --> East, North, North, West
+	(6) Maze                --> West, North, East
+ 
+Okay, you've made it.  Go southeast to the riddle room.  Answer 
+"Well", and the passage to the east will open.  Go East, take 
+the pearls, and continue east.  Board the bucket.  Say it just 
+that way.  Open the bottle, pour the water.  Well done. You are 
+now at the top of the well.  Disembark the bucket.  Again, say 
+it just that way.  Go east to the tea room.  Leave the cakes 
+for now, and go northwest.  Tell robot "East".  Go East.  Tell 
+robot "push triangular button".  You hear a dull thump in the 
+distance, and you have just stopped the round room from 
+spinning.  Tell robot "south". Go south.  Take the sphere.  Tell 
+robot "lift cage".  Take the sphere.  Go north and west.  Now 
+you compass spins wildly.  You need to keep trying to get back 
+to the tea room.  Try and go Southeast, if you end up in the 
+Machine room go West and try another direction until you get to 
+the tea room. Take all of the cakes.  Eat the eatme cake.  Go 
+East.  Throw the red cake. take the tin of spices.  Go West.  
+Eat the blue cake.  Drop the orange cake. Go West.  Board the 
+bucket.  Fill bottle with water.  Close the bottle. Disembark.  
+Go west, west, down, and north.  You are back in the now stable 
+round room.  Open the box.  Take the violin.
+ 
+Now it is time to stop another nuisance.  Every time you enter 
+the Dungeon someone (probably the thief) shuts the trap door 
+and locks you in.  This will continue until you find a way out 
+of the Dungeon (other than the fireplace.)  So off we go . . . 
+West, West, South, South, East and Up.  Take the coins.  Do not 
+touch the rusty knife or the skeleton.  Go Southwest, east, 
+south, and Northeast.  A giant Cyclops blocks the way.  The 
+easiest way past him is the speak the name of his nemesis.  Say 
+"Odysseus".  Go north then east and you will be back in the 
+living room.  Open the case. Put treasures in case. Take the 
+egg.
+ 
+If you still have the egg you need to give it to the thief so 
+he can open it for you.  If he has already stolen it skip to 
+the next paragraph.  Go west, south, and up.  Give the egg to 
+the thief.  Waste no time and get out of there.  Go Down, 
+North, and East.  If you get killed, you can restore the game 
+and try again.
+ 
+Okay, we have one last nuisance to get rid of, namely the 
+thief.  You can not kill the thief until you have at least 200 
+points, and more is better. So, now we will go off and get as 
+many treasures as we can.  Open the trap door and go down.  Go 
+back to the round room (East, north, and East).  Go east to the 
+Grail room.  Take the Grail.  Go west.  Go Northeast twice. You 
+are in a strange cavernous room.  Say "echo".  Okay, now you 
+can take the bar.  Off to the dam now.  Go Up, and East.  We 
+need to open the sluice gates, so go north.  Take the 
+matchbook.  Read the Matchbook.  Interesting!  A free 
+brochure.  Send for free brochure.  Go north.  Take the 
+screwdriver, and the wrench.  Push the yellow button.  This 
+have activated the control panel for the dam.  Go south twice.  
+Turn the bolt with the wrench.  Drop the wrench.  Go south 
+twice.  Go southeast and east.  A giant mirror is here. Touch 
+the mirror.  The ground shakes.  You have been transported to 
+another mirror room, identical to the first.  Go east and 
+down.  Take the trident. Go southeast and take the pump.  Go 
+north, up, north, west twice, and down the slide. Your back in 
+the cellar, go up to the living room.  Put the treasures in the 
+case.  Drop the pump and screwdriver.
+ 
+Go back down into the cellar.  Go south twice.  Take the 
+painting.  Go west. Here we are at the bank of Zork!  And we 
+intend to rob it.   Go northeast, east and south to the 
+Chairman's Office. Get the portrait and go back north. Drop 
+all, and take the lamp.  Walk through the north wall. You've 
+been transported to a seemingly exitless room! But don't panic, 
+just walk through the south wall, presto! You're back at the 
+Safety Deposity again. Walk through the north wall once again, 
+and you have found the vault! Lying neatly is a pile of 200 
+Zorkmid bills.  Take the bills and enter the north wall. Now 
+drop the bills and go west. If you try to leave the Depository 
+carrying the bills or the paintings, an alarm sounds and an 
+invisible barrier blocks your leaving! Go back west to the bank 
+vault, take all, enter the curtain of light then go south. This 
+time, when you exit the room, you find yourself back at the 
+bank's main entrance. Go south twice. Go north, west, and up to 
+the living room.  Put treasures in the case. Take the bottle.
+ 
+You should have just the lamp, matches and bottle with you 
+now.  Go down, east, north, and east.  Go east, and up.  Take 
+the Bell.  Go east again.  Take the book and the candles.  Go 
+west twice, east, south and down.   Now lets get rid of those 
+evil spirits.  Open the bottle.  Ring the bell.   Ouch!  Pour 
+the water in the bell.  Take the bell.  Take the candles.  
+Light a match.  Light the candles with the match.  Read the 
+book.  Go east twice, and west twice.  This is just to get the 
+points.  Go up, and west.  Touch the mirror.  Go east, down, 
+southeast, and south.  Take the trunk.  Go north twice, up, 
+north, west twice, and down the slide.  Go up to the living 
+room.  Put the trunk in the case.  Drop all, and take the lamp.
+ 
+Save.
+ 
+Here we go.  First off check you score.  Your rank must be at 
+Adventurer. Next, check your condition with diagnose.  You 
+should be perfectly healthy.  If not read ahead to get more 
+treasures.  Then when your score is high enough, and your health 
+is good you will be off to kill the thief.  Go east, and up.  
+Take the knife.  Go back down to the kitchen, west twice, south 
+and up.  Kill the thief with the knife.  Keep up the fight 
+until one of you is dead.  If you die, restore and try again.  
+If the thief dies, take all the treasures.  Go down, north and 
+east.  Put the treasures in the case.
+ 
+Okay, your lamp will not last long enough for you to finish the 
+game, so we need another light source.  To do this you need the 
+rope from the attic.  Go east and up.  Take the rope and the 
+brick.  Go down and west.  Drop the brick.  Go down.  Go east, 
+north, and down.  You are at the deep ravine.  Go west, and 
+then east.  You are at the top of the dome.  Tie the rope to 
+the rail and climb down.  Take the torch, and turn off the 
+lamp. Go down, east, north, and down to the deep ravine.  Go 
+down and west.  Take the wire.  Go north and east.  Take the 
+coffin.  The coffin does not fit through any of the standard 
+exits.  So well have to use some magic (or prayer).  Go up, 
+north, and east.  Now go north trice.  Go up and north.  You 
+are in the northern mirror room.  Touch the mirror.  Go north 
+twice.  (note you could go to the temple from here and pray.  
+This would take you to the forest.)  Go west four times, and up 
+to the living room.  Put the coffin in the case.
+ 
+Now for a ride on the frigid river.  Take the pump.  Go down to 
+the cellar.  The first stop is to get the shovel in the small 
+cave.  Go east, north, east, northwest, east twice, south, east 
+twice, take the shovel.  Now off to the boat.  Go Northwest, 
+south, up, east, and down.  Inflate the boat with the pump.  
+Drop the pump.  Put the stick in the boat.  (If you are 
+carrying the stick while you board or disembark the boat the 
+boat will be punctured.)  Board the boat.  Launch.  Go down 
+three times.  Take the buoy.  Go west.  Disembark.  Take the 
+shovel.  Dig sand with shovel 4 times.  Take the statue.  Go 
+south twice.  Wave the stick.  Go east twice.  Take the pot of 
+gold.  Go Southeast, and up twice.  Now back to the house.  Go 
+south, north, west twice, east twice, south, north, east, and 
+in.  Open the sack, and take the garlic.  Go west to the living 
+room.  Open the buoy.  Put the emerald in the case.  Drop the 
+buoy.  Put the pot in the case.  Put the statue in the case.  
+Drop the stick and the shovel.  Take the screwdriver.
+ 
+Now it time go mining.  Down to the cellar.  East, north, and 
+east.  Southeast to the winding passage, and east to the mirror 
+room.  Touch the mirror.  Go west twice, and north.  Here we 
+are at the entrance to the mine.  Go northwest and west.  Good 
+thing we have that garlic to keep the bat at bay.  Take the 
+figurine.  Go east, south and northeast.  You are in the shaft 
+room.  Put the torch and the screwdriver in the basket.  Do not 
+under any circumstances take the torch any further.  Turn on 
+your lamp and go north.  Now go west and down.  Pweew!  Gas!  
+Good thing you left the torch behind.  Take the bracelet and go 
+up.   Now into the mine (part I).  Go east, northeast, north, 
+northeast, northwest, and down.  You should be at the ladder 
+top.  Go down, northeast.  Take the coal.  Go south, up twice, 
+east twice, and south.  You are back at the shaft room.  But 
+the coal in the basket.  Lower the basket.  Now into the mine 
+(part II).  Go north, northeast, north, northeast, northwest, 
+and down.  At the ladder top again.  Go down and south. Drop 
+all.  Go southwest through the narrow passage.  (You can not 
+walk through here carrying anything.)  Take the coal, torch, 
+and screwdriver.  Go east to the machine room.  Open the lid, 
+put the coal in the machine, close the lid.  Turn the switch 
+with the screwdriver, and open the lid.  Take the diamond.  Go 
+northwest.  Put the diamond, torch, and screwdriver in the 
+basket.  Go northeast.  Take all.   Go north, up twice.  East 
+twice, and south.  Drop the timber here (you'll need it later). 
+Raise the basket.  Take all from the basket.  Turn off the 
+lamp.  Go west, south, and down the slide.  Go up to the living 
+room.  Put the diamond, bracelet and figurine in the case.  
+Drop the garlic and the screwdriver.
+ 
+Okay, now its time for the royal puzzle.  Go West, south, and 
+up to the thief's hide-a-way.  Go east.  Make sure you save 
+here.  Be very careful to follow these directions exactly. 
+Down, push east wall, South, Southwest, Push south wall, East 
+twice, Push south wall, North twice, East, Push south wall, 
+Take card, Push south wall, East, Northeast, Push west wall 
+four times, Northeast twice, North, Push east wall, Southwest, 
+South, Southeast, Northeast, North, Push west wall, Northwest, 
+Push south wall twice, West, Northwest twice, Push south wall, 
+Southeast trice, Northeast, Push west wall twice, Southwest, 
+Push north wall trice, Northwest, Up.
+ 
+Whew!  That is the most difficult puzzle in Dungeon.  Glad its 
+over.  Go West, down, north, and east to the living room.  Put 
+the card in the case.  Drop all.
+ 
+The next puzzle is new to version 3.1 of Dungeon.  It's called 
+the Palanirs.  Go east twice, south and west.  Take the mat 
+from the front of the house.  Go South and east.  Enter the 
+house, and go west to the living room.  Take the screwdriver 
+and the torch.  Go Down, east, north down, west, east, down, 
+and west to the Size room.  Put the mat under the door.  Open 
+the lid.  Put the screwdriver in the keyhole.  Take the mat.  
+Take the key.  Unlock the door with the key.  Open the door.  
+Enter the room.  Take the sphere.  Exit the room.  Go east, 
+down, east, north, down, west, and east to the dome room.  
+Untie the rope.  Take the rope.  Go east, west, south, west 
+twice, and up to the living room.  Put treasures in the case.  
+Drop all.
+ 
+ 
+Take the rope and the torch.  Go down, east, north, easta, 
+southeast, and east to the mirror room.  Touch the mirror.  Go 
+west twice, north, northeast.  Take the timber.  Go west and 
+south.  Drop the timber.  Tie the rope to the timber.  Go down 
+trice.  Go east and south to the sooty room.  Take the sphere.  
+Go north, down, and up to the living room.  Put treasures in 
+case.  Drop all.
+ 
+Take the Newspaper, brick, matches, lamp, torch, and wire.
+ 
+Were getting there.  One last major puzzle to solve.  Go back 
+down into the cellar.  Go east, north, and down twice.  Go 
+west, and north.  Turn on your lamp, and throw the torch.  You 
+need to hurry from here on out, because your lamp will not last 
+too long.  Go west, take the ruby.  Go west, and south.  Hello 
+Aviator! Board the basket.  Open the receptacle.  Put the 
+newspaper in the receptacle.  Light a match.  Light the 
+newspaper with the match.  Away we go.  Wait (type "wait") 
+until you reach the small ledge.  Land on the ledge.  
+Disembark, and tie the rope to the hook (you don't want to get 
+stuck here).  Take the coin, and go south.  Take the purple 
+book.  Go north and board the balloon.  Untie the rope.  Wait 
+until you reach the wide ledge.  Land the balloon and 
+disembark.  Tie the rope to the hook.  Go south.  Put the brick 
+in the hole.  Put the wire in the brick.  
+ 
+Save.
+ 
+Light a match.  Light the wire with the match.  Now get outta 
+there!  Go north.  Boooooom!  Go south.  Take the crown.  Now 
+get outta there!  Go north.  Wheew!  Just in time.  You still 
+need to hustle, so board the basket, untie the rope.  Close the 
+receptacle.  Now wait as you sink to the bottom.
+ 
+Go north, west, south, and north.  Take the now burned-out 
+torch.  Go east, north trice, up, north, west, west.  Untie the 
+rope (so you can slide down the slide).  Down the slide, and up 
+to the living room.  >> Turn off your lamp. <<  Put the ruby, 
+torch, coin, and crown in the case.  Open the purple book.  Put 
+the stamp in the case.  Drop the purple book. Take the egg.  
+Take the canary from the egg.  Put the egg back in the case.  
+Go east trice, then west.  You are back by the tree where you 
+found the egg.  Wind the canary.  Take the bauble.  Go east, 
+south, north, east.  Now back to the front of the house.  Go 
+south and west.  Take the brochure (good thing you read that 
+matchbook).  Take the stamp.  Go south, east and in.  Go west 
+to the Living room.  Put the bauble, canary, and the Don Woods 
+stamp in the case.
+ 
+Congratulations ! You have just received all 616 points.  But 
+what this not fireworks?  No trumpets with a fanfare?  You 
+still have the end-game to finish!  Wait, and continue to wait 
+until you get a message from a sinister, wraithlike figure.  
+ 
+Save.
+ 
+Turn you lamp back on.  With any luck you will have just enough 
+battery power to get you though.  Take the matches and candles 
+just in case.  Go down, east, north, east trice, south, down, 
+east twice.  You are back at the crypt.  Open the crypt.  (This 
+can only be done once the end-game has started.)  Enter the 
+crypt.  Close the crypt.  Turn off your lamp and wait.
+ 
+You can no longer save the game from this point forward.  
+However, you can restore to this point by incanting a magic 
+phrase.  Follow the instructions and write down you magic 
+incantation.  Now walk down the steps.  Go north, drop you 
+sword and go south.  Now push the red button.  Go north, take 
+the sword, and go north again.  Enter the box.  Lift the short 
+pole.  Push the red panel twice.  Lower the short pole.  Push 
+the mahogany panel trice.  lift the short pole and push the red 
+panel four times.  Now push the pine panel and go north.  Knock 
+on the door.  The Dungeon Master appears and will ask you three 
+questions.  You must answer all three questions correctly or 
+you will not be able to finish the game.
+ 
+"The taking of which object offends the ghosts?"  Skeleton.
+ 
+"From which room can one enter the robber's hideaway without 
+passing through the Cyclops room?"  Temple.  (note: type 'treasure').
+ 
+"What object is of use in determining the function of the iced 
+cakes?"  Flask.
+ 
+"What object in the dungeon is haunted?"  Rusty knife.
+ 
+"Besides the temple, to which room is it possible to go from 
+the alter?"  Forest.
+ 
+"What can be done to the mirror that is useful?"  Touch.
+ 
+"In which room is the phrase 'Hello sailor' useful?"  None.
+ 
+"What is the absolute minimum specified value of the Zorkmid 
+treasures, in zorkmids?"  30003.
+ 
+Now go north twice, east, and north twice.  Set the dial to 4.  
+Push the button.  Tell master, stay.  Go south.  Open the 
+door.  Go in.  Tell master, set dial to 6.  Tell master, push 
+button.  Open the bronze door.  Go south.  At last the 
+treasures of Dungeon of Zork are yours!
+ 
+-------------------------------------------------------------
+Any questions comments, bugs, etc.  can be reported to me at:
+horowitz@panix.com
+ 
+ 

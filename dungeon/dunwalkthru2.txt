@@ -1,0 +1,310 @@
+! Dungeon run through for V3.x, 750-800 moves
+!
+! Bring in mat, get egg
+!
+pick up mat
+s.e.e.w
+u.take egg.d
+e.s.n.e.open window
+w.take bottle
+w.drop mat
+take lamp and sword
+move rug.open trap door.light lamp.d
+save "w1"
+! Kill troll, disarm Round Room
+! If killed instead, restore "w1" and try again
+!
+e
+! Repeat until troll dead
+!
+kill troll
+drop sword
+n.e.s
+! Need to get to Engravings Cave.  Here's how to return to
+! Round Room if transported to wrong area
+!	Deep Canyon		s
+!	Grail Room		w
+!	North-South Passage	ne.u.e.s.s
+!	East-West Passage	e
+!	Winding Passage		e.n.n.w
+!	Maze			w.n.e
+!
+se.answer "well"
+e.take pearls
+e.get in bucket
+open bottle.pour water
+disembark.e.nw
+tell robot "e".e
+tell robot "push triangular button"
+tell robot "s".s
+take sphere.tell robot "lift cage".take sphere
+n.w.se
+! Need to get to Tea Room.  Here's how to return to
+! Magnet Room if transported to wrong area
+!	Machine Room		w
+!
+take all but orange cake
+eat eatme cake
+e.throw red cake at pool.take spices
+w.eat blue cake.w.get in bucket
+put water in bottle.disembark
+w.w.d.n
+open box.take violin
+! Get rid of Cyclops, keep trap door from shutting
+!
+w.w.s.s.e.u.take coins
+sw.e.s.ne.ulysses
+n.e.turn off lamp
+open case.put valuables in case.drop all
+save "w2"
+! Need to get thief working on egg
+! If you get killed, restore "w2" and try again
+!
+take lamp and egg.light lamp
+w.s.u
+give egg to thief.d.n.e
+! Collect lots of treasures
+!
+open trap door.d.e.n.e
+e.take grail
+w.ne.ne
+! In the Echo Room, type echo to disarm
+!
+echo
+take bar.u.e.n
+take matchbook.send for brochure
+n.take screwdriver and wrench
+push yellow button
+s.s.turn bolt with wrench
+drop wrench.s.s.se.e.rub mirror
+e.d.take trident
+se.take pump
+n.u.n.w.w.d.u.turn off lamp
+put valuables in case
+drop all
+save "w3"
+! Rob the Bank of Zork
+!
+take lamp and matches.light lamp
+d.s.s.take painting
+w.ne.e.s.take portrait
+n.drop all but lamp and matches
+walk through north wall
+walk through south wall
+walk through north wall
+take bills
+walk through north wall
+drop bills
+w.w.take all.walk through screen
+s.s.n.w.u.turn off lamp
+put valuables in case
+drop all
+save "w4"
+! Land of Living Dead
+!
+take lamp and matches and bottle.light lamp
+d.e.n.e.e.u.take bell
+e.take book and candles
+w.w.e.s.d
+! If candles blown out, relight
+!
+light match
+light candles with match
+ring bell
+take candles
+light match
+light candles with match
+pour water on bell
+read book
+e.e.w.w
+u.w.rub mirror
+e.d.se.s.take trunk
+n.n.u.n.w.w.d.u.turn off lamp
+put valuables in case.drop all
+take candles.e.take sack
+u.take all.d.w.drop all
+save "w5"
+! Kill the thief.  Must be "Adventurer" with no wounds
+! If killed, restore from "w5" and try again
+!
+take knife and lamp.light lamp
+w.s.u
+! Repeat until thief dead
+!
+kill thief
+take valuables.d.n.e.turn off lamp
+put valuables in case.drop all
+save "w6"
+! Get alternate light source
+!
+take lamp and rope.light lamp
+d.e.n.d.w.e
+tie rope to railing
+d.turn off lamp.take torch
+d.e.n.d.d.w.take wire
+n.e.take coffin
+u.n.e.n.n.n.u.n.rub mirror
+n.n.w.w.w.w.u.
+put valuables in case.drop all
+save "w7"
+! Ride the Frigid River
+!
+take torch and pump
+d.e.n.e.nw.e.e.s.e.e.take shovel
+nw.s.u.e.d.inflate boat with pump
+drop pump
+get in boat.take stick
+launch.d.d.d.take buoy
+w.disembark.
+dig sand with shovel.again.again.again
+take statue.s.s
+wave stick.e.e.take pot
+se.u.u.s.n.w.w.e.e.s.n.e.w.w.open sack.take garlic
+open buoy.take emerald
+put valuables in case.drop all
+save "w8"
+! Coal mining
+!
+take torch and lamp and garlic and screwdriver
+d.e.n.e.se.e.rub mirror
+w.w.n.nw.w.take figurine
+e.s.ne.put torch and screwdriver in basket
+light lamp.n.w.d.take bracelet
+u.e.ne.n.ne.nw.d.d.ne
+take coal.s.u.u.e.e.s.put coal in basket.lower basket
+save "w9"
+n.ne.n.ne.nw.d.d.s.drop all
+sw.take all
+e.open lid.put coal in machine.close lid
+turn switch with screwdriver.open lid.take diamond
+nw.put all in basket
+ne.take all
+n.u.u.e.e.s.raise basket.drop timber
+take all except timber.turn off lamp
+w.s.d.u.put valuables in case.drop all
+save "w10"
+! Puzzle Room
+!
+take torch.w.s.u.e.take warning
+d.push east wall
+s.sw.push south wall
+e.e.push south wall
+n.n.e.push south wall
+take card.push south wall
+e.ne.push west wall.again.again.again
+ne.ne.n.push east wall
+sw.s.se.ne.n.push west all
+nw.push south wall.again
+w.nw.nw.push south wall
+se.se.se.ne.push west wall.again
+sw.push north wall.again.again
+nw.u
+w.d.n.e.put valuables in case.drop all
+save "w11"
+! Palantirs, part 1
+!
+take mat and screwdriver and torch
+d.e.n.d.w.e.d.w
+put mat under door.open lid
+put screwdriver in keyhole
+take mat.take key.take screwdriver
+unlock door with key.open door.enter
+take sphere.exit.e
+d.e.n.d.w.e.untie rope.take rope
+e.w.s.w.w.u.put valuables in case.drop all
+save "w12"
+! Palantirs, part 2
+!
+take rope and torch
+d.e.n.e.se.e.rub mirror
+w.w.n.ne.take timber
+w.s.drop timber.tie rope to timber
+d.d.d.e.s.take sphere
+n.d.u.put valuables in case
+save "w13"
+! Balloon
+!
+take torch and lamp and brick and wire and warning and matches
+d.e.n.d.d.w.n.light lamp
+throw torch at glacier
+w.take ruby
+w.s.get in basket
+open receptacle.put warning in receptacle
+light match.light warning with match
+! Wait until small ledge reached
+!
+wait
+wait
+land.disembark.tie rope to hook.take coin
+s.take purple book.n.get in balloon
+untie rope
+! Wait until wide ledge reached
+!
+launch
+wait
+wait
+land.disembark.tie rope to hook
+s.put brick in hole.put wire in brick
+light match.light wire with match
+n.s.take crown
+n.get in balloon.untie rope.close receptacle
+! Wait until balloon reaches bottom
+!
+launch
+wait
+wait
+wait
+wait
+disembark.n.w.s.n.take torch
+e.n.n.n.u.n.w.w.d.d.u.turn off lamp
+open purple book.take stamp
+put valuables in case.drop all
+take canary.e.e.s.w.open mailbox
+take brochure.take stamp
+s.e.e.w.wind canary.take bauble
+e.s.n.e.w.w.put valuables in case.drop all
+save "w14"
+! Should have 616 points, wait for endgame herald.
+!
+wait
+wait
+wait
+wait
+wait
+light lamp
+d.e.n.e.e.e.s.d.e.e.open crypt
+enter.close crypt.turn off lamp
+wait
+! Transported to endgame
+! Get magic spell, then play
+!
+incant "phrase"
+d.n.drop sword
+s.push button.n.n.enter
+raise short pole.push red panel.again
+lower short pole.push mahogany panel.again.again
+raise short pole.push red panel.again.again.again
+push pine panel.n
+knock on door
+! List of all answers
+!
+! ...offends the ghosts		answer "skeleton"
+! ...enter robber's hideaway	answer "temple"
+! ...determine function		answer "flask"
+! ...object is haunted		answer "rusty knife"
+! ...from the alter		answer "forest"
+! ...useful to mirror		answer "rub"
+! ...'Hello sailor' useful	answer "nowhere"
+! ...value of Zorkmids		answer "30003"
+!
+answer "..."
+answer "..."
+answer "..."
+n.n.e.n.n.set dial to 4.push button.tell master "stay"
+s.open door.enter
+tell master "set dial to 6"
+tell master "push button"
+open bronze door
+exit
+! You've won the game
+!

@@ -1,0 +1,567 @@
+To:	Dungeon Players
+From:	"The Translator"
+Subj:	Game Information
+Date:	8-Dec-94
+
+This document provides information about V3.2 of Dungeon.
+
+Dungeon is a development prototype of the game ZORK(tm), which is
+available commercially from Infocom, Inc, on most personal computers.
+Copyright on the Dungeon sources is retained by Infocom, and commercial
+use is strictly prohibited.  ZORK(tm) is a trademark of Infocom, Inc.
+
+I.  Components
+
+Dungeon is a maze-solving game for solitaire play.  V3.2 runs on any
+OpenVMS VAX, OpenVMS AXP, OSF/1 AXP, or RISC ULTRIX system.  The kit
+consists of the following files:
+
+	dparam.for			-parameters
+	dungeon.f			-program root
+	game.f				-main routine
+	parser.f			-parser
+	gdt.f				-game debugging tool
+	subr.f				-subroutines
+	rooms.f				-room processors
+	verbs.f				-verbs
+	objects.f			-objects
+	timefnc.f			-clock processors
+	vmssubr.for			-VMS dependent subroutines
+	unixsubr.c			-UNIX dependent subroutines
+	hints.doc			-hints file
+	dungeon.doc			-this file
+	dundiffs.doc			-revision log
+	dindx				-initialization data base
+	dtext				-main data base [binary file]
+
+The hints file is intended only as a last resort.
+
+II.  Installation Instructions, VMS
+
+Before starting, please note that all files (source and object) must
+reside in the user's area.  Rename file DINDX to DINDX.DAT and DTEXT
+to DTEXT.DAT.  DTEXT.DAT is a binary file consisting of 80-byte fixed
+length records.
+
+To compile Dungeon, issue the following commands:
+
+  $ FORT/NOCHECK/CONT=40 DUNGEON.F,GAME.F,GDT.F,PARSER.F,SUBR.F(cr)
+  $ FORT/NOCHECK/CONT=40 ROOMS.F,VERBS.F,OBJECTS.F,TIMEFNC.F,VMSSUBR.FOR(cr)
+
+There should be no error messages.
+
+To link the compiled sources, issue the following command:
+
+  $ LINK DUNGEON,GAME,GDT,PARSER,SUBR,-(cr)
+  _$ ROOMS,VERBS,OBJECTS,TIMEFNC,VMSSUBR(cr)
+
+It is now possible to run Dungeon:
+
+  $ RUN DUNGEON(cr)
+
+When invoked, Dungeon takes no more than 5-10 seconds to start up.
+
+Notes on the executable program:
+
+  - The only files needed to execute Dungeon are DUNGEON.EXE,
+    DINDX.DAT, and DTEXT.DAT.  All other files can be deleted.
+
+  - Files DINDX.DAT and DTEXT.DAT must reside in the user's area;
+    alternately, logicals DINDX and DTEXT must be defined to point
+    to the actual files DINDX.DAT and DTEXT.DAT, respectively.
+
+III.  Installation Instructions, OSF/1
+
+Before starting, please note that all files (source and object) must
+reside in the user's area.  Except for dtext, all files in the
+distribution kit are ASCII.  dtext is a binary file consisting of
+80-byte fixed length records.
+
+To compile and link Dungeon, issue the following commands:
+
+  % f77 -vms -align dcommons *.f -o dungeon(cr)
+
+There may be a few warning messages.
+
+It is now possible to run Dungeon:
+
+  % dungeon(cr)
+
+When invoked, Dungeon takes no more than 5-10 seconds to start up.
+
+Notes on the executable program:
+
+  - The only files needed to execute Dungeon are dungeon, dindx,
+    and dtext.  All other files can be deleted.
+
+  - Files dindx and dtext must reside in the user's directory; you
+    can change the source to place these files in a different directory
+    (see section VII).
+
+IV.  Changes In Dungeon V3.x
+
+V3.2 reflects a slightly later version of the MDL source than V3.0:
+
+  - The verb COUNT has been added.
+
+  - The object CHIMNEY has been added, for CLIMB UP CHIMNEY.
+
+  - Many objects now recognize both singular and plural, where
+    appropriate (eg, cliff/cliffs, jewel/jewels, corpse/corpses,
+    ghost/ghosts, spirit/spirits).
+
+  - Numerous refinements and traps have been added (eg, try KICKing
+    THE BUCKET in the well, or SHAKing THE BOTTLE of water when it
+    is full and open).
+
+  - Certain passages are no longer traversible if holding the coffin.
+    (You can still get the coffin out.)
+
+The most significant changes from V2.x to V3.0 were:
+
+  - Three new puzzles have been implemented: the Palantir puzzle,
+    the Last Point puzzle, and the Dead Player puzzle.
+
+  - The parser recognizes the first eight letters of words as
+    significant.
+
+  - The parser allows list of objects, separated by commas or AND,
+    to be used with TAKE, PUT, and DROP, eg, TAKE SWORD AND LAMP.
+    POSSESSIONS is a new collective noun (in addition to EVERYTHING
+    and VALUABLES) that denotes every object you are carrying.  The
+    parser allows the EXCEPT <list of objects> construct to be used
+    to qualify collective nouns.
+
+  - As a result, multiple commands on the same line must now be
+    separated by semicolons or periods, since commas are used for
+    multiple objects.
+
+  - The syntax for TELL (INCANT, ANSWER) requires the command (spell,
+    answer) be enclosed in quotation marks, eg, TELL ROBOT "PICK UP
+    LABEL".  Either single or double quotation marks can be used to
+    delimit the substring, but the beginning and ending quotation
+    marks must match.
+
+  - SAVE and RESTORE now accept an optional file name within
+    quotation marks.  If no file name is given, DSAVE.DAT is used.
+
+  - AGAIN repeats the most recent successful command.
+
+  - If you are killed, your belongings are scattered throughout the
+    maze, rather than at the end.
+
+V. Problems Fixed
+
+The following problems from V3.1 have been fixed:
+
+  - DROP ALL works in the dark.
+
+  - TAKE/DROP/ALL BUT now works.
+
+  - TAKE ALL will not take water from the bottle.
+
+  - POUR WATER in y now works correctly.
+
+  - PLAY x WITH y now works.
+
+  - PUMP UP x WITH y now works.
+
+  - FEEL is recognized as a synonym for RUB etc.
+
+  - The weight calculations in TAKE and PUT now include contained objects
+    correctly.
+
+  - IT now works in more cases and reports problems correctly.
+
+  - SHAKing an open object while up the tree is equivalent to dropping
+    the contents of the object.
+
+  - SPINning a turnable object no longer says the object can't be turned.
+
+  - THROW x AT BOTTLE/LAMP are no longer handled like THROW BOTTLE/LAMP.
+
+  - Several vocabulary miscodings (STACK, ROCK, SWITCH) have been fixed.
+
+  - A bug which prevented objects present in multiple rooms from being
+    implicitly found has been fixed.
+
+  - Throwing water at the stove or into the well or down the slide
+    now works correctly.
+
+  - A problem with inferred objects has been fixed, eg, SWING SWORD
+    will correctly pick the troll as the object of attack.
+
+  - When the thief discards valueless articles, the correct message
+    is printed.
+
+  - When the thief robs you in broad daylight, a message is printed.
+
+  - The granite wall in the Slide Room is now recognized.
+
+  - If the adventurer attempts to tie the rope to the timber or coffin
+    while carrying them, the correct message is printed.
+
+  - The rope can no longer be tied simultaneously to the Dome Room
+    railing and to the timber or coffin.
+
+  - When using the rope to descend into the Puzzle Room, the correct
+    message is printed.
+
+  - If the adventurer misplays the Puzzle Room and blocks the entrance
+    hole, subsequent attempts to re-enter will fail.
+
+  - When the adventurer looks into a palantir while in the same
+    room with another palantir, the correct message is printed.
+
+  - If the player is killed after successfully exorcising the spirits,
+    the description of the Land of the Living Dead is now correct.
+
+  - If the player is killed, his possessions are scattered to the
+    correct locations.
+
+  - A negative score prints the correct condescending rank.
+
+  - Lighting conditions while dead are now reported correctly.
+
+  - TELL MASTER "KILL MASTER WITH SWORD" now kills the player.
+
+  - KILL x WITH MASTER gives a more appropriate response.
+
+  - Several bugs in which VERB x WITH OBJECT were treated as VERB OBJECT
+    WITH x have been fixed.
+
+  - In the end game, ANSWERing after failing the quiz no longer restarts
+    the quiz, and ANSWERing after passing no longer continues the quiz.
+
+  - In the end game, the prison door cell does not close when
+    already closed.
+
+  - Several subscript out of range problems, which randomly crashed
+    the game in some environments, have been fixed.
+
+The following problems from V3.0 have been fixed:
+
+  - Resurrection after death works correctly.
+
+  - The load calculation for going up the chimney works correctly.
+
+  - DIG x WITH y gives a more appropriate response.
+
+  - Many spelling errors have been corrected.
+
+  - Some (but not all) of the problems founding in porting to
+    MS DOS have been corrected.
+
+The following problems from V2.6 have been fixed:
+
+  - If you ask for your SCORE while it is negative, you get an
+    appropriate condescending message.
+
+  - The command TELL ROBOT "DESTROY ME" destroys you rather than
+    the robot.
+
+  - Unexpected events (such as appearance of the thief, or failure
+    of a command) wipe out any subsequent commands on the current
+    line, to prevent unexpected catastrophes.
+
+  - TAKE BOTTLE OF WATER, and other situations involving "OF", now
+    work correctly.
+
+  - The grating in the Clearing cannot be referenced until the leaf
+    pile has been dislodged.  If the grating is unlocked but closed,
+    attempting to go up from the Grating Room gives the right message.
+
+  - ^Z (end of file) in response to the input prompt no longer crashes
+    the program.
+
+  - THROUGH is no longer a synonym for WITH, so LOOK THROUGH WINDOW
+    will parse, while LOOK WITH WINDOW will not.
+
+  - <random verb> EVERYTHING now gives the correct message.
+
+  - The thief demon now reports the results of its criminal activity
+    correctly.
+
+In addition, numerous detailed responses have been added for wayward or
+strange situations, as appropriate.
+
+VI.  Abstract of Informational Printouts
+
+SUMMARY
+-------
+
+		    Welcome to Dungeon!
+
+   Dungeon is a game of adventure, danger, and low cunning.  In it
+you will explore some of the most amazing territory ever seen by mortal
+man.  Hardened adventurers have run screaming from the terrors contained
+within.
+
+   In Dungeon, the intrepid explorer delves into the forgotten secrets
+of a lost labyrinth deep in the bowels of the earth, searching for
+vast treasures long hidden from prying eyes, treasures guarded by
+fearsome monsters and diabolical traps!
+
+   No system should be without one!
+
+   Dungeon was created at the MIT Laboratory for Computer Science by
+Tim Anderson, Marc Blank, Bruce Daniels, and Dave Lebling.  It was
+inspired by the Adventure game of Crowther and Woods, and the long
+tradition of fantasy and science fiction games.  The original version
+was written in MDL (alias MUDDLE).  The current version was translated
+from MDL into FORTRAN by a somewhat paranoid DEC engineer who prefers
+to remain anonymous.
+
+   On-line information may be obtained with the commands HELP and INFO.
+
+INFO
+----
+
+Welcome to Dungeon!
+
+   You are near a large dungeon, which is reputed to contain vast
+quantities of treasure.   Naturally, you wish to acquire some of it.
+In order to do so, you must of course remove it from the dungeon.  To
+receive full credit for it, you must deposit it safely in the trophy
+case in the living room of the house.
+
+   In addition to valuables, the dungeon contains various objects
+which may or may not be useful in your attempt to get rich.  You may
+need sources of light, since dungeons are often dark, and weapons,
+since dungeons often have unfriendly things wandering about.  Reading
+material is scattered around the dungeon as well;  some of it
+is rumored to be useful.
+
+   To determine how successful you have been, a score is kept.
+When you find a valuable object and pick it up, you receive a
+certain number of points, which depends on the difficulty of finding
+the object.  You receive extra points for transporting the treasure
+safely to the living room and placing it in the trophy case.  In
+addition, some particularly interesting rooms have a value associated
+with visiting them.  The only penalty is for getting yourself killed,
+which you may do only twice.
+
+   Of special note is a thief (always carrying a large bag) who likes
+to wander around in the dungeon (he has never been seen by the light
+of day).  He likes to take things.  Since he steals for pleasure
+rather than profit and is somewhat sadistic, he only takes things which
+you have seen.  Although he prefers valuables, sometimes in his haste
+he may take something which is worthless.  From time to time, he examines
+his take and discards objects which he doesn't like.  He may occas-
+ionally stop in a room you are visiting, but more often he just wanders
+through and rips you off (he is a skilled pickpocket).
+
+HELP
+----
+
+1 User Commands
+
+The following command may prove useful while playing Dungeon.
+They are not, however, game commands; that is, they have no side
+affects on the current game.
+
+1.1 Verbosity
+
+    VERBOSE:	The default: prints long room descriptions on first
+		visit, 20% of the time thereafter.
+
+    BRIEF:	Prints short room descriptions and short object
+		descriptions for rooms which have been visited.
+
+    SUPERBRIEF:	Prints short room descriptions and short object
+		descriptions all the time, even on the first visit.
+
+Note that the maximally verbose description may always be obtained
+by the command "LOOK".  See also the "ROOM" and "OBJECTS" commands.
+
+1.2 Help
+
+    INFO:	Prints information on what the game is about.
+
+    HELP:	Prints this message.
+
+1.3 Progress
+
+    QUIT:	Prints your score, and asks whether you wish to
+		continue playing; "Q" is equivalent.
+
+    SCORE:	Prints your score (and deflates your ego).
+
+    TIME:	Prints how much time you have wasted playing the game.
+
+    VERSION:	Prints the current version number.
+
+1.4 Save/Restore
+
+    SAVE:	Saves the current game for future continuation.
+
+    RESTORE:	Restores a previous saved game.
+
+SAVE and RESTORE take an optional file name, in quotation marks.  If
+no name is given, the file name defaults to "DSAVE.DAT".
+
+1.5 General
+
+    AGAIN:	Repeats the last command.
+
+    LOOK:	Describes the current surroundings; "L" is equivalent.
+
+    ROOM:	Prints the verbose description of the current room,
+		without object descriptions.
+
+    RNAME:	Prints the short description of the current room.
+
+    OBJECTS:	Prints the verbose description of all the objects
+		in the current room, without describing the room.
+
+    INVENTORY:	Prints a list of your possessions; "I" is equivalent.
+
+    DIAGNOSE:	Prints your current state of health.
+
+    WAIT:	Causes "time" to pass.
+
+2 Command parser
+
+A command is one line of text terminated by a carriage return.
+For reasons of simplicity, all words are distinguished by their
+first eight letters.  All others are ignored.  For example, typing
+"DISASSEMBLE THE ENCYCLOPEDIA" is not only meaningless, it also
+creates excess effort for your fingers.  Note that this trunca-
+tion may produce ambiguities in the interpretation of longer words.
+
+You are talking to a moderately stupid parser, which understands
+the following types of things:
+
+2.1 Actions
+
+    Among the more obvious of these, TAKE, PUT, DROP, etc.  Fairly
+    general forms of these may be used, such as PICK UP, PUT DOWN, etc.
+
+2.2 Directions
+
+    NORTH, SOUTH, UP, DOWN, etc. and their various abbreviations.
+    Other more obscure directions (LAND, CROSS) are appropriate in
+    only certain situations.
+
+2.3 Objects
+
+    Most objects have names and can be referenced by them.  Multiple
+    objects, separated by commas or AND, can be used with TAKE, PUT,
+    and DROP.  In addition, there are collective objects EVERYTHING,
+    VALUABLES, and POSSESSIONS, which may also be used with TAKE,
+    PUT, and DROP.  Collective objects may be qualified with an
+    EXCEPT clause; for example, TAKE EVERYTHING EXCEPT THE RUG.
+
+2.4 Adjectives
+
+    Some adjectives are understood and required when there are
+    two objects which can be referenced with the same noun (e.g.,
+    DOORs, BUTTONs).
+
+2.5 Prepositions
+
+    It may be necessary in some cases to include prepositions, but
+    the parser attempts to handle cases which aren't ambiguous
+    without.  Thus "GIVE CAR TO DEMON" will work, as will "GIVE DEMON
+    CAR".  When a preposition is used, it should be appropriate;
+    "GIVE CAR WITH DEMON" won't parse.
+
+2.6 Sentences
+
+    The parser understands a reasonable number of things.  For example,
+    multiple commands (separated by periods or semicolons) can be placed
+    on the same line.
+
+2.7 Ambiguity
+
+    The parser tries to be clever about what to do in the case of
+    actions which require objects that are not explicitly specified.
+    If there is only one possible object, the parser will assume
+    that it should be used.  Otherwise, the parser will ask.
+    Most questions asked by the parser can be answered.
+
+3 Theories
+
+The following "theories" are fundamental to the game and should be noted.
+
+3.1 Containment
+
+    Some objects can contain other objects.  Many such containers can
+    be opened and closed.  The rest are always open.   They may or may
+    not be transparent.  For you to access (e.g., take) an object
+    which is in a container, the container must be open.  For you
+    to see such an object, the container must be either open or
+    transparent.  Containers have a capacity, and objects have sizes;
+    the number of objects which will fit therefore depends on their
+    sizes.  You may put any object you have access to (it need not be
+    in your hands) into any other object.  At some point, the program
+    will attempt to pick it up if you don't already have it, which
+    process may fail if you're carrying too much.  Although containers
+    can contain other containers, the program doesn't access more than
+    one level down.
+
+3.2 Fighting
+
+    Occupants of the dungeon will, as a rule, fight back when
+    attacked.  In some cases, they may attack even if unprovoked.
+    Useful verbs here are "ATTACK <villain> WITH <weapon>", "KILL",
+    etc.  Knife-throwing may or may not be useful.  You have a
+    fighting strength which varies with time.  Being in a fight,
+    getting killed, and being injured all lower this strength.
+    Strength is regained with time.  Thus, it is not a good idea to
+    fight someone immediately after being killed.  Other details
+    should become apparent after a few melees or deaths.  The
+    "DIAGNOSE" command describes your state of health.
+
+3.3 Vehicles
+
+    These are some objects in the labyrinth which are rumored to have
+    the ability to transport the fearless adventurer to mysterious
+    regions which are inaccessible on foot.  Needless to say, the
+    adventurer faces great personal peril as he encounters these
+    regions.  The vehicles can usually be entered with the "BOARD"
+    command and can be exited with the "DISEMBARK" command.
+
+VII.  Source Notes
+
+A few notes for source hackers.
+
+- The initialization module (INIT in game.f) includes an access check
+  function PROTCT.  If PROTCT returns a value of .TRUE., the game is
+  permitted to start;  if PROTCT returns .FALSE., the game is
+  terminated with a suitably nasty message.  At present, PROTCT is a
+  dummy routine and always returns .TRUE.;  by tailoring PROTCT,
+  access to the game can be restricted to certain hours or users.
+
+- The two data files (DINDX.DAT and DTEXT.DAT in VMS, dindx and dtext
+  in UNIX) are accessed without a pathname.  If you want to place these
+  files in a central directory, then:
+
+  > [VMS] define logical names for DINDX and DTEXT pointing to
+    that directory.
+  > [UNIX] edit module INIT in GAME.FOR to include a pathname in
+    the two OPEN statements.
+
+- Porting the game to other processors is possible provided that the
+  target system's FORTRAN supports 32-bit integers and implements the
+  extended features of VAX FORTRAN.  The following extended features
+  are required:
+
+  > ! recognized as a comment delimiter.
+  > READONLY attribute in OPEN, to allow shared access to the data files.
+  > Logical operators on integers for bitwise binary operations (.AND.,
+    .OR., and .XOR.).
+  > Capability to disable integer overflow checking.
+  > $ in FORMAT statements.
+  > Octal constants ('xxx'O) in DATA statements (module PARSER.F) and
+    octal specifiers in FORMAT statements (module GDT.F).
+  > Operating-system dependent routines to get the current date and
+    time of day (see modules VMSSUBR.F and UNIXSUBR.C, as well as the
+    DEC FORTRAN specification).
+
+  If these features are available, and VMSSUBR.FOR or UNIXSUBR.C is
+  rewritten for the target environment, then porting the game is
+  possible.  A particular warning for other UNIX environments: the
+  IDATE and ITIME functions of VAX FORTRAN are NOT standard on other
+  UNIX systems; you will probably need the unixsubr.c module provided
+  in the source kit.  However, you are STRICTLY on your own, sport!
