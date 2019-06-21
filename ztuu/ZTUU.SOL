@@ -1,0 +1,97 @@
+ 
+Complete Walkthru of ZORK: The Undiscovered Underground
+
+by the GameDesigner
+
+With much thanks to these 4 guys:  Paul David Doherty  Dave Einstein           
+                                   Jeremy Redburn      Matt Russotto
+
+NOTE: You need to hit lamp whenever it grows dim. You may have to do so twice
+& you'll get a message telling you it's on again. I have placed (needed)
+in those spots where it was needed.
+
+>ne
+>examine boulders
+>ne
+>n
+>nw
+>talk to man
+>take mask
+>n
+>wear fish then wear fur then wear razor
+>s
+>take rune,gores,implementeers,zm$100000
+>se
+>drop lamp
+>take glasses
+>s
+>remove mask then remove suit
+>drop mask
+>drop suit
+>take lamp
+>s
+>hit lamp (needed)
+>e
+>e
+>take blue,red
+>put blue,red in glasses
+>east
+>open trunk
+>take coin
+>w
+>w
+>w
+>s
+>n
+>drop rune
+>s
+>drop gores
+>s
+>s
+>drop all
+>wear glasses
+>open lid
+>push button
+>take ball
+>examine it
+>hit lamp (needed)
+>drop glasses
+>drop gloves
+>take tree
+>examine it then take tinsel then attach tinsel to coin
+>hit lamp (needed)
+>take lamp
+>drop tree
+>take sword
+>put coin in slot
+>take coin
+>put coin in slot (clue will be given about which [numbered] rib to pry)
+>w
+>w
+>pry [numbered] rib with sword
+>sw
+>take can
+>ne
+>e
+>s
+>take tree,balloon,flathead,house
+>put flathead on circle
+>put tree on square
+>put house on triangle
+>put balloon on pentagon
+>take zm$100000
+>hit lamp (needed)
+>se
+>drop candy
+>nw
+>n
+>n
+>sw
+>hit lamp (needed)
+>wait
+>sw
+
+You scored 100 out of a possible 100, in 80 turns,
+earning you the rank of The Ultimate Infocom Text Adventurer.
+Congratulations!
+
