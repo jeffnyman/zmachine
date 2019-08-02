@@ -1,0 +1,221 @@
+
+4. Mike Gerrard's Lebling Interview (1987)
+==========================================
+
+"Interview at the end of the universe"
+by Mike Gerrard
+[Atari ST User (???), May 1987]
+
+                             ----- ----- -----
+
+Interview at the end of the universe
+
+Mike Gerrard meets Infocom's Dave Lebling
+
+
+  WHEN the 1986 awards were handed out recently by the Software Publisher's
+Association in America, the software industry's main trade association
+there, the name of Infocom was prominently featured.
+
+  Silver Certificates were awarded to its recent adventures, Wishbringer
+and Leather Goddesses of Phobos, for selling more than 50,000 copies, a
+Gold Certificate went to an earlier game, Suspended, for passing the
+100,000 mark.
+
+  And there were Platinum Certificates (for over 250,000 sales each) for
+Infocom's two most famous titles, Zork and Hitchhiker's Guide to the
+Galaxy. Sales of Zork have obviously come on a little from when it was
+originally released, as I discovered when I spoke to the game's co-author,
+Dave Lebling, making his first visit to England.
+
+  "Zork did start slowly", he told me. "We were originally distributed by
+Visicorp, which is the company that also distributed VisiCalc, the first
+spreadsheet program, and they sort of had the feeling I think that, well,
+this is a very nice game but games were not very exciting at the time, but
+we've got this spreadsheet which is really exciting.
+
+  "So it started off with pretty much what games sold then in the United
+States when they were introduced, which was about ten or twelve thousand
+copies. That was pretty much what they expected, and they weren't terribly
+interested in pushing it harder.
+
+  "So we got the distribution rights back from them and started
+distributing it ourselves. We repackaged it and it was very successful, and
+because it was our own product we were very motivated to make it a success
+and it began to pick up from that time".
+
+  As well as helping to write Zork, Dave Lebling was one of the men behind
+the setting up of Infocom in the late 1970s.
+
+  "The Dynamic Modelling Group was really where we all started from, which
+was a research group at MIT (Massachusette Institute of Technology) and we
+did many different things. We did electronic mail and database systems and
+all kinds of very serious funded research-type stuff. But we also spent a
+lot of time fooling around in our spare time, hacking.
+
+  "At the time we were on the computer network ARPAnet, that was run for
+research sites that got money from the Department of Defence in the United
+States and one of the things that this network is used for is sending
+interesting software around from place to place.
+
+  "One such piece was this game called Adventure or Colossal Cave Adventure
+and everyone just went totally berserk over it.
+
+  "The excitement was astonishing because nothing like it had ever been
+seen before and all work ceased throughout almost the entire country at
+these research sites.
+
+  "It was almost like an infection. One site would get it and all work
+there would cease for a couple of weeks and then it would spread to sites
+nearby...you would look at the computers, because these were all
+time-sharing machines, and there would be 12 people logged in but they were
+all playing Adventure".
+
+  This original game was written by two programmers called Crowther and
+Woods, and because it was public domain software it has since appeared in
+various versions, notably in the UK by Level 9/Rainbird as the first part
+of the Jewels of Darkness trilogy for the ST. Adventure was inspired by
+Dungeons and Dragons, as was Dave Lebling himself.
+
+  "I used to play D&D and I liked the idea of being able to play it on a
+computer. I've always been a science fiction and fantasy fan and that was a
+way of indulging that interest, so the combination of D&D, fantasy,
+computers, was so seductive that it was impossible that I wasn't going to
+end up playing it".
+
+  The game and the idea of computerised adventures attracted several other
+people at MIT who set about trying to write their own game. This dealt with
+magic and mystery in the great underground empire of Zork.
+
+  Dave Lebling was principally involved in the creation of a parser that
+would extend the simple verb-noun format of adventure to read and
+understand quite complex inputs from players.
+
+  Zork was hacked into ARPAnet, and when the group of people from MIT
+decided they wanted to form a software company it was to be their first
+release.
+
+  Says Dave: "We wanted to have a software company, and we weren't quite
+sure of what it would do, but we thought Zork was a good thing to start
+with because we had seen Scott Adams' adventures, which were the first ones
+to be seen on micros.
+
+  "We said they were all very nice but we could do much better and it was
+just a question of how much of our mainframe adventure game we could fit on
+a micro. We found the answer was about one-third, so we did that and then
+the next third and the next making three games out of it".
+
+  Zork proved to be the making of Infocom, and although the company's
+published a couple of other products - Cornerstone, which was a relational
+database, and Fooblitzky, a graphic strategy game - it is the text
+adventure game they are renowned for.
+
+  The latest release, Hollywood Hijinx, is the 23rd in a row. It comes, as
+do all the others now, with the familiar detailed packaging that makes the
+opening of the box containing an Infocom game such a treat.
+
+  Hollywood Hijinx is written by Dave "Hollywood" Anderson, who started
+with Infocom as an adventure tester, a route taken by several people now
+writing adventures for the company.
+
+  "Four of our writers are former testers", Dave Lebling explains, "such as
+Steve Meretzky, who wrote Hitchhiker's with Douglas Adams, then Jeff
+O'Neill who did Ballyhoo, Dave Anderson, and a new writer named Amy Briggs.
+
+  "What often happens is that people come into our testing department and
+they start hinting that they have a good idea for a game, and that's how
+they turn into writers. The way we typically write games is to write a
+short scenario of three or four pages of "This is what it's going to be
+about' and circulate it to other authors to see what they think, almost
+like a job application, and that's what Hollywood did - his nickname really
+is Hollywood, by the way.
+
+  "We get together at least once a week, all the writers, and discuss
+what's going on. That's another incentive for a tester to become a writer,
+because testers are barred from our lunches! Every so often someone will
+say 'Don't tell me any of the details of any of the puzzles,' and you even
+get people saying, 'I'm going to get up and leave now, I don't want to hear
+it.' That's so you get the pleasure of playing the game for yourself when
+it's finished.
+
+  "With Hijinx I knew in slightly more detail what was happening because
+Hollywood, being a new writer, was asking a lot of questions about how to
+implement particular things, how to make an elevator work, or how to
+program the Atomic Chihuahua. As a result we knew far more details of that
+game than we would of a Steve Meretzky game, for example.
+
+  "All our authors do both the programming and the creation of scenarios,
+the writing of the adventures, but it works out pretty well because the
+level of programming ability that it takes is not all that high.
+
+  "We use a very high-level language and you can learn the rudiments in a
+few hours. From then on it's just a question of when you get in a sticky
+spot you come to someone else, like myself or Steve Meretzky, and say
+'Well, I've got this rope...how do I do a rope? It can be in two rooms at
+once if you tie it to something and take the end with you, and can you tie
+things up with it and drag them around with you?'
+
+  "Then we'll stop and think and say, 'You don't want to have a rope in
+your game,' and that makes it much easier for the new writers, you see.
+
+  "My new game has a chain in it, and it's even worse than a rope in almost
+every respect you can imagine and it's caused me no end of horror...the
+number of bugs that have come in on this chain alone would stack from here
+to there and back again".
+
+  Having enjoyed Dave's previous games, which as well as Zork were
+Starcross, Suspect, Enchanter and Spellbreaker, I ask him what his new one
+will be about.
+
+  "I'm afraid we have this stock response to questions about our new
+products, which is that it's not our policy to talk about them until about
+six weeks before they're released...but I can tell you a little bit about
+it.
+
+  "It's got some very bizarre stuff in it and it's in a new genre. It's not
+a Tolkein-style fantasy and it's not science fiction and it's not a mystery
+and it's not a comedy".
+
+  I thank Dave for this detailed information and ask about the fact that
+Infocom no longer seems to categorise its games or rate them as to how
+difficult they are meant to be.
+
+  "No, we no longer do that as it seemed to be becoming a little
+meaningless. Like the new game, Bureaucracy. What is Bureaucracy? It's got
+some science fiction elements and some fantasy elements but it's mostly
+just bizarre, so we'd have had to create a special category to put it in".
+
+  As it's less than six weeks to the release of Bureaucracy the ST will be
+the first machine to see it - I ask Dave if he can tell me a little about
+that.
+
+  "It's the third that we've done on our fairly new 256k system, which will
+only run on the larger and newer machines. The story is set off by your
+ill-fated decision to move to accept a wonderful new job that involves
+having to accept a free trip to Paris. So you send a change of address form
+to your bank, which promptly does what banks always do with that sort of
+thing, which is to throw it away.
+
+  "As a result your entire life begins to collapse into a shambles of total
+uselessness. You basically have to acquire the means to extricate yourself
+from this situation of having no money, of having your mail going to the
+wrong address, having your credit cards cancelled, your computer not
+working, all the kinds of terrific things that can happen.
+
+  "One of the people who tested it - fortunately in the minority - didn't
+like it very much because he said, 'I have enough of this happening at
+work. I don't want to go home and have it happen too!"
+
+  With Hitchhiker's such a success, and Bureaucracy set to follow it, I
+wondered if there would be any more Infocom/Douglas Adams' collaborations.
+
+  "Well, I'm afraid it's not company policy etc etc...but the obvious next
+thing to do would be The Restaurant at the End of the Universe, and there's
+always the possibility that that will happen".
+
+  On leaving I ask Dave, just for the record, what his job title is at
+Infocom.
+
+  "It's officially written in my job description that I wander the halls
+clutching a cup of coffee... and that's about the size of it!"
+

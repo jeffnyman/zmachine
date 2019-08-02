@@ -1,0 +1,47 @@
+
+
+-------------------------------------------------------------------------
+The IEEE Computer Article (1979)
+ieee.txt
+
+"Zork: A Computerized Fantasy Simulation Game"
+by P. David Lebling/Marc S. Blank/Timothy A. Anderson
+[IEEE Computer, vol. 12 no. 4, April 1979, pages 51-59.]
+-------------------------------------------------------------------------
+The Creative Computing Article (1980)
+creative.txt
+
+"How to Fit a Large Program Into a Small Machine"
+by Marc S. Blank/S. W. Galley
+[Creative Computing, July 1980, pages 80-87.]
+-------------------------------------------------------------------------
+The Byte Article (1980)
+byte.txt
+
+"Zork and the Future of Computerized Fantasy Simulations"
+by P David Lebling
+[Byte, December 1980, pages 172-182.]
+-------------------------------------------------------------------------
+Mike Gerrard's Lebling Interview (1987)
+lebling.txt
+
+"Interview at the end of the universe"
+by Mike Gerrard
+[Atari ST User (???), May 1987]
+-------------------------------------------------------------------------
+Paul Rigby's Moriarty Interview (1991)
+moriarty.txt
+
+"From here to Trinity...and back again"
+by Paul Rigby
+[Adventure Probe, vol. 5 no. 5, May 1991, pages 15-19.]
+-------------------------------------------------------------------------
+The History of Zork (1985)
+zorkhist.txt
+
+"The History of Zork"
+by Tim Anderson/Stu Galley
+[Part 1: The New Zork Times, vol. 4 no. 1, Winter 1985.]
+[Part 2: The New Zork Times, vol. 4 no. 2, Spring 1985.]
+[Part 3: The New Zork Times, vol. 4 no. 3, Summer 1985.]
+-------------------------------------------------------------------------

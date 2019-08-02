@@ -1,0 +1,453 @@
+
+3. The Byte Article (1980)
+==========================
+
+"Zork and the Future of Computerized Fantasy Simulations"
+by P David Lebling
+[Byte, December 1980, pages 172-182.]
+
+                             ----- ----- -----
+
+  Zork and the Future of Computerized Fantasy Simulations
+
+  P David Lebling
+  14 Pelham Ter
+  Arlington MA 02174
+
+  CFS (computerized fantasy simulation) games are a new art form: the
+computerized storybook. Instead of reading the story, you play it. The
+author presents the story, but only as you squeeze it out of him by wit and
+brute force. It's up to you to figure out what's going on, and the
+satisfaction of doing so depends on how well thought out the story is. To be
+fun to play, the story must be more or less consistent and complete. To a
+large extent, this means that the program that embodies the story must
+simulate the universe well.
+
+  I have been involved for several years with Zork, one of the larger and (I
+would like to think) better worked out CFS games. The authors (Marc Blank,
+Tim Anderson, Bruce Daniels, and I) have spent a lot of time trying to make
+the universe of Zork as consistent and complete as possible within the
+bounds of the space available. The first version of Zork was written for the
+Digital Equipment Corporation PDP-10; it eventually grew to strain even the
+megabyte address space of that machine. The game was completely rewritten
+for microcomputers and is now limited primarily by the size of a 5-inch
+floppy disk. Zork games swap data (programs and text) into memory from the
+disk as needed and therefore aren't limited by the size of the system's user
+memory.
+
+  Standard 5-inch floppy disks store about 100 K bytes (some store more,
+some less). This works out to about 10,000 words of English prose and a
+similar amount (about 40 K bytes) of code. This is large for a
+microcomputer-based program, but as literature it's still only at the short
+story length.
+
+  Zork is shrunk to fit into the micro-world by running on a Zork-language
+virtual machine. This means that the code that is running while you are
+playing Zork is much more compact than the same program would be if written
+in machine language (on a Radio Shack TRS-80, for example). This is because
+the instruction set of the virtual machine is tailored to CFS games. For
+example, the Zork-language instruction to move an object from one room to
+another takes just 3 bytes of storage. The other advantage is that the Zork
+code is machine independent; all it takes to move Zork to another machine is
+to write the Zork-language interpreter for that machine. Such interpreters
+currently exist for the Apple II, PDP-11, PDP-10 and the TRS-80. For more
+details about the Zork-language see "How to Fit a Large Program into a Small
+Machine," by Marc S Blank and S W Galley, July 1980, Creative Computing.
+
+  Even using a disk to store parts of the game, the PDP-10 Zork was still
+too large for the micro-world. As a result, we split it into two smaller,
+independent games: The Great Underground Empire, Part I, and The Great
+Underground Empire, Part II, each of which is a self-contained program.
+There was room left over, so we added some new problems to round things out.
+
+  Still, a lot of universe can fit into a microcomputer and disk. Zork
+"understands" a useful subset of English (mostly imperative sentences),
+including sentences as complex as "Put all of the books but the green one
+under the rug." The Zork vocabulary is over 600 words and includes 100
+verbs. A parser this powerful is a good-news/bad-news proposition. On the
+one hand, such a parser makes possible the implementation of subtle and
+realistic problems. When the most complicated sentence you can understand is
+"Drop uranium," you are limited to producing certain types of situations. If
+you can say "Tell the Robot 'Put the uranium in the lead box'," then the
+game can become more interesting.
+
+  Zork has a fairly complicated parser for imperative sentences. It
+endeavors to reduce its input to a construction of:
+
+  <verb> <direct object> <indirect object>
+
+where the objects are optional. Prepositions are folded into the verb, which
+allows Zork to differentiate
+
+  >PUT BOMB UNDER TROPHY CASE
+
+from
+
+  >PUT BOMB IN TROPHY CASE
+
+(Lines beginning with > are the player's input.)
+
+  Similarly, adjectives are used to distinguish among several books, doors,
+or any collection of like objects. In conjunction with all and but,
+adjectives provide powerful constructs:
+
+  >TAKE ALL THE TREASURES
+  >BURN ALL THE BOOKS BUT THE BLACK ONE
+
+  The parser also allows the player to be laconic, if he so desires. If only
+one object in the vicinity fits the verb he uses, it will be selected and
+the player will be informed:
+
+  A menacing troll brandishing a bloody axe blocks all passages out of the
+  room.
+  >KILL TROLL
+  (with sword)
+
+  If the meaning is not obvious, the player is asked to clarify, and the new
+input is added to the old to produce a complete sentence. This can go on
+indefinitely:
+
+  >OPEN
+  Open what?
+  >DOOR
+  Which door do you mean?
+  >THE TRAP DOOR
+
+  For more details on the Zork parser and internal structure, see "Zork: A
+Computerized Fantasy Simulation Game," by P David Lebling, Marc S Blank, and
+Timothy A Anderson, in IEEE Computer, April 1979.
+
+  On the negative side, having a clever parser means that the player may
+expect almost any concept to be understood. Unfortunately, only a small
+number of concepts can be implemented given the available space.
+
+  Some concepts that Zork does implement are:
+
+* Properties: Objects can have properties or attributes, some of them
+  changeable. Lamps can be on or off, treasures valuable or worthless,
+  villains fighting-mad or peaceful. Some of these properties never change;
+  a container is always a container for example. But other properties can
+  change; for example, some containers may be opened and closed at will.
+
+* Containment: Objects may have contents. Bottles can contain water and be
+  open or closed. Some objects are transparent. Some objects must be
+  unlocked before they can be opened. The capacity of an object is limited.
+  (For example, a paper bag won't hold as much as a bucket.)
+
+* Weight: Objects have weight. A solid gold coffin weighs a lot more than a
+  newspaper. The amount a player can carry depends on the total number of
+  objects carried and on the total weight of the objects and their contents.
+
+* Position: An object may be in, on, or under another object.
+
+* Vehicles: The player may be in a vehicle which is traveling through the
+  locations in a game. In addition to the player, the vehicle may have other
+  contents distinct from the player's belongings and the "contents" of the
+  location.
+
+* Time: Game events may be scheduled to happen at arbitrary future times.
+  Time-bombs may go off, matches burn out, lanterns grow dimmer, and so on.
+
+* Actors: Actors are other characters who have roles in the game. They may
+  fight or choose not to. They may speak to the player or be spoken to. They
+  may move around or stay in a particular place.
+
+* Fighting: The player may engage in combat with other inhabitants of the
+  game. He may be wounded (affecting his ability to carry heavy loads), or
+  he may kill his opponent and retrieve the opponent's weapon.
+
+  Every object in Zork has a pointer to its location (which may be to
+"nowhere"), which is its parent; a pointer to the next object in the same
+location, which is its sibling; and a pointer to its first contents, which
+is its first child. Thus a container points to its contents, and the
+contents point back to it.
+
+  One result of this implementation is that an object can be in only one
+place at one time. Things like water, which can potentially be infinitely
+finely divided, are difficult to implement in Zork for this reason.
+Consequently Zork has two "water" objects; one for water in general (flowing
+in streams, filling reservoirs, leaking from pipes) and one for water in the
+player's possession (in a bottle, for example). In handling water, the
+general sort always eventually ends up as a specific sort, and exceptions
+aren't tolerated:
+
+  >FILL BOTTLE WITH WATER
+  The bottle is now full of water.
+  >POUR WATER
+  The water spills to the ground and evaporates.
+
+  Another aspect of containment involves problems of weight and capacity.
+The weight of an object must always be the sum of its own weight and the
+weight of its contents. Naturally, each of the contained objects has its
+weight calculated the same way. On the other hand, the volume of an object
+if filled only by the size of the objects directly in it.
+
+  LOOK
+  You are in the magic boat.
+  The magic boat contains:
+    A shovel.
+    A lamp.
+    A solid-gold coffin.
+    The solid-gold coffin contains:
+      A brown sack.
+      The brown sack contains:
+        A lunch.
+        A clove of garlic.
+
+  Of course, containers have other properties. They can be open or closed,
+opaque or transparent, locked or unlocked.
+
+  >INVENTORY
+  You are carrying:
+  A glass bottle.
+  The glass bottle contains:
+    A quantity of water.
+  >DRINK WATER
+  I can't reach the quantity of water.
+  >OPEN BOTTLE
+  Opened.
+  >DRINK WATER
+  Thank you very much. I was rather thirsty.
+
+  The concept of a surface is implemented as a special kind of containment.
+Objects which have surfaces on which other objects may sit are actually
+containers with an additional property of "surfaceness."
+
+  Vehicles are an even more specialized case of containers. A vehicle has a
+property called the action property that is allowed a chance to give special
+handling to any input of the player. For example, a spaceship vehicle might
+want to restrict the player's movement during the acceleration phase of a
+flight or prevent him from taking objects that are outside the ship.
+
+  Possibly the most useful concept in Zork is that of time. An arbitrary
+even may be scheduled to occur at an arbitrary time in the future: for
+example, the discharging of the batteries in a lantern is controlled in this
+way.
+
+  Introducing time also introduces some problems. If an event is scheduled,
+the circumstances under which it is valid must be coded into it. Otherwise,
+the behavior of the game can appear to be nonsensical. Suppose the player
+lights the fuse on some dynamite. If he sticks around, he will be blown to
+smithereens. He runs away, only to find that the dynamite has apparently
+followed him. He still gets blown up because, when the explosion happens,
+the program doesn't check to see if he is still there.
+
+  One method of dealing with players who are "killed" in Zork is to
+resurrect them in a forest. In an early version of Zork, it was possible to
+be killed by the collapse of an unstable room. Due to carelessness with
+scheduling such a collapse, 50,000 pounds of rock might fall on your head
+during a stroll down a forest path. Meteors, no doubt.
+
+  In an effort to introduce a little more randomness into what was at one
+time a deterministic game, we added fighting. The player was allowed to
+attack any of the monsters or other characters he encountered during his
+travels. The scheme we implemented is conceptually simple. There is a range
+of possible outcomes for any attack, either by the player on a villain or
+vice versa. You can be killed outright, knocked unconscious, wounded,
+wounded seriously, staggered, or you can have your weapon knocked from your
+hand.
+
+  The villain, each time it is his turn to riposte, has the option of
+parrying or turning and running (if he is not limited to one room, as the
+troll is). Some weapons are better against certain opponents than others.
+The relative strengths of player and opponent figure into the outcome as
+well (the player's strength is a function of health and progress in the
+game). The results are a selection of appropriate messages describing the
+fight as it progresses.
+
+  >KILL THIEF WITH SWORD
+  Clang! Crash! The thief parries.
+  >AGAIN
+  The thief receives a deep gash on his side.
+  >KILL
+  The thief slowly approaches, strikes like a snake, and leaves you wounded.
+  >ATTACK
+  The thief is disarmed by a subtle feint past his guard. The robber,
+  somewhat surprised at this turn of events, nimbly retrieves his stiletto.
+  >KILL THIEF
+  A good stroke! Blood wells down the thief's leg. You evidently frightened
+  the robber. He flees, but the contents of his bag fall to the floor.
+
+  Well, he may live to fight another day, but you recovered some of his
+booty. Fighting in Zork is pretty primitive when compared to real life or
+even to a "melee" in the popular game Dungeons and Dragons. You could make
+combat more elaborate, and in fact there are CFS games that have gone in
+that direction, producing quite realistic "hack and slash" games.
+
+  Possibly, the most enjoyable aspect of writing Zork was designing the
+other characters the player may encounter. Zork contains various other
+actors, including a troll, a thief, a wizard, various monsters and friendly
+gnomes, and a beautiful princess. Some of these are pretty simple. The troll
+is basically an obstacle. He doesn't move but merely bars the way and must
+be defeated by force of arms.
+
+  The thief, on the other hand, is embodied by a complex program. After a
+while, he begins to take on a personality of his own: the slightly
+down-at-the-heels younger son of a noble family, perhaps. He is cultivated
+but has a rather nasty sense of humor. For example, his idea of fun is to
+foul up the standard Adventure maze-mapping technique of identifying rooms
+by dropping objects in them. When he finds a player doing that, he will
+wander around switching objects, no doubt chuckling all the while:
+
+  You are in a maze of twisty passages, all alike.
+  >DROP KNIFE
+  Dropped.
+  In the distance, you hear a voice saying, "My, I wonder what this fine
+  rope is doing here?"
+
+  Some actions of the thief are motivated by the characterization; he is
+unlikely to kill you during a fight if he knocks your weapon out of your
+hand - too well bred. On the other hand, maybe his thiefly reflexes will get
+the better of him.... Many of the thief's actions are motivated by simple
+probability. There is a certain chance he will stop in any room while
+roaming around, a certain probability that he will steal any particular
+object (high for treasures, of course), and a probability that he will
+decide to attack the player. His behavior, nonetheless, can seem very
+realistic: Sometimes he seems to dog the player, who no sooner finds a
+treasure than the thief filches it.
+
+  There is a rich range of possibilities in producing games in which
+characters in the story (other than the player) act more like real people
+and less like monsters of one-dimensional villains. But the simulation of
+human behavior is still an unsolved problem in the field of artificial
+intelligence. The best approximations to date have been the classic
+simulations of a nondirective psychotherapist (Weizenbaum's Eliza) and of a
+psychotic paranoid (Colby's Parry). But even they would not make very
+interesting characters in a story. (These two curious beings actually met
+once, as recorded in "Parry Encounters the Doctor" by Vinton Cerf, in
+Datamation, July 1973.)
+
+  There are other, more mundane areas in which Zork could be extended. For
+example, take a simple concept like clothing. If the player can reference
+his clothing (or even a magic ring he might be wearing) some interesting
+questions arise. Is there a distinction between wearing something and
+carrying something? Probably, because when the player says "drop all," he
+probably doesn't mean to include his clothes. Also, the existence of clothes
+probably means the definition of many parts of the body. You could take this
+to extremes:
+
+  >INVENTORY
+  You are empty-handed.
+  You are wearing a diamond ring on your right index finger.
+  You are wearing bells on your toes.
+  You are wearing a coonskin cap on your head.
+
+Of course, if you implement clothes, there might as well be pockets, and
+backpacks, and other "different" sorts of containers. It would have to be
+defined whether the player can reference things inside them (what if the
+flap of the backpack is closed, for example?). What happens if he falls into
+a lake? Do the clothes drag him down? What about wearing a suit of armor?
+Clothes probably need a weight or need to produce a fatigue effect on the
+player.
+
+  The mention of falling into a lake brings up another possible extension to
+Zork. Currently players aren't allowed to swim. One reason was to avoid the
+problems associated with the player's belongings dragging him under. Another
+is the question of what happens to his belongings. Do they get wet? If so,
+do they ever dry out again? What about wet matches (to give one example)? Is
+wet paper still burnable? How long can the player swim? Can he hold his
+breath and swim underwater? There are any number of questions that have to
+be considered if such a feature is to be implemented.
+
+  Even the addition of a run-of-the-mill object can produce complications.
+In early versions of Zork, the troll's axe disappeared when he was killed.
+We finally decided to let the player recover it, as advances in Zork weapons
+technology removed the reason for destroying it. Unfortunately, we didn't
+think it through. One of our best play testers, on hearing that "you can
+finally get the axe," immediately said, "Great, I'm going to go up to the
+forest and chop down some trees." Oops. We never thought of that, not to
+mention using the axe to chop through doors, split timbers, and any number
+of other commonplace uses for something we were thinking of strictly as a
+weapon.
+
+  The authors of Zork have thought about several possible extensions to the
+Zork parser. One that has come up many times is to add adverbs. A player
+should be able to do the following:
+
+  >GO NORTH QUIETLY
+  You sneak past a sleeping lion who sniffs but doesn't wake up.
+
+The problem is to think of reasons why you would not do everything
+"quietly," "carefully," or whatever. Perhaps there should be time and
+fatigue penalties for doing things in a nonstandard way:
+
+  >SEARCH WALL CAREFULLY
+
+This would take a long time (and all the while the lamp is burning down),
+possibly tiring the player out. To be fair to the player, he should not need
+to search every wall carefully, or walk quietly everywhere. There should be
+reasonable clues or hints as to why and where he should do such things.
+
+  This long discussion of the problems of extending Zork is not intended to
+scare anyone (including the authors of the game). The idea is to show that
+apparently simple extensions to the game have their nonobvious
+ramifications. Of course, it would be simple to ignore them, but we think
+that the authors of a game should play fair with the players. Just as it's
+disappointing to see the wires holding up Flash Gordon's spaceship, it's
+disappointing to see:
+
+  >PUT RING ON FINGER
+  I don't know the word 'finger'.
+
+  We authors would hardly claim that Zork is perfect in this respect, but we
+have made an effort in that direction. When we add something new, we try to
+think of how the player might try to use it and what verbs he might try to
+apply to it. Within the space available, we've tried to put most of those
+things in.
+
+  All the CFS games that I have encountered are similar in one major
+respect: they are about problem solving and the acquisition of treasure.
+This is probably because a structure containing problems and rewards is
+obvious and easy to implement.
+
+  It is possible to imagine games in which the goals are different. Some
+programmers in southern California have designed a game in which the moral
+choices the player makes have a significant impact on the game. For example,
+does the player give an old man some water? Similarly, the problem-solving
+idea could be shifted into something closer to scientific research. The
+player could be introduced into an environment where he performs
+experiments, ponders the results, and ultimately gains understanding and
+control of that environment.
+
+  Innovations in form as well as content are possible. There are already CFS
+games that try to give the player a graphic view of his surroundings. As
+microcomputer technology advances, this will become more common, and the
+renditions will achieve higher quality: it will be technically feasible to
+have a CFS game "illustrated" by Frank Frazetta or Jeff Jones. On the other
+hand, the player's imagination probably has a more detailed picture of the
+Great Underground Empire than could ever be drawn. I can even recall
+discussions among the game's implementors over who should play the thief in
+the movie version.
+
+  Another area where experimentation is going on is that of multiplayer CFS
+games. Each player (possibly not even aware how many others are playing)
+would see only his own view of the territory. He would be notified when
+other players enter or leave the room, and could talk to them. There was
+briefly a multiplayer version of the PDP-10 Zork several years ago, and
+today there is a "Multiple User Dungeon" at Essex University in England.
+
+  There are major problems, however. One is producing problems that are
+compatible with different numbers of players (from one to, say, a dozen). If
+it takes five players to solve a problem (one to hold the light bulb and
+four to turn the ladder?), what happens if only two people are playing? The
+other problem, as far as the microcomputer owner is concerned, is that few
+can afford an unlimited number of machines or even video monitors to
+accommodate so many players.
+
+  CFS games as an art form can continue to grow as long as their medium
+continues to grow. Zork is already constricted by the size of today's
+microprocessors (it was large even on the PDP-10), but the new generations
+of 16- and 32-bit machines offer the opportunity of enormous further growth.
+The possibilities of new concepts, new milieux, and new purposes are
+enormous. We would like to think that it will not be long before authors
+view such scenarios as just another medium of expression. I find the
+prospect exciting because I enjoy playing CFS games as much as writing them.
+
+                             ----- ----- -----
+
+  If you are interested in playing Zork: The Great Underground Empire, Part
+I, the game is distributed by Personal Software, 1330 Bordeaux Dr, Sunnyvale
+CA 94086 on foppy disk for Apple II and TRS-80 computers. Zork games are
+produced by Infocom Inc, POB 120, Kendall Sta, Cambridge MA 02142. Zork is a
+trademark of Infocom Inc.
+

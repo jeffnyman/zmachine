@@ -1,0 +1,273 @@
+
+5. Paul Rigby's Moriarty Interview (1991)
+=========================================
+
+"From here to Trinity...and back again"
+by Paul Rigby
+[Adventure Probe, vol. 5 no. 5, May 1991, pages 15-19.]
+
+                             ----- ----- -----
+
+FROM HERE TO TRINITY...AND BACK AGAIN
+
+By Paul Rigby
+
+     "Ay, there's the genius and the wonder of the thing!" - Sherlock Homes
+
+No prizes for guessing that the above quotation is borrowed from the works
+of Conan Doyle and that the good Sherlock refers to that devilish man of
+the criminal arts, Professor Moriarty. I always thought that it was a great
+pity that Brian Moriarty (when he was resident at Infocom) did not write
+"Sherlock: Riddle of the Crown Jewels" adventure for Infocom which was
+completed by Bob Bates. Imagine the mileage they could have extracted out
+of that.
+
+I know that many adventurers, after playing works such as "Wishbringer",
+"Trinity" and "Beyond Zork", would consider Brian Moriarty to be a genius
+of interactive fiction. Brian left Infocom to move to Lucasfilm where he
+created the animated graphic adventure, Loom. He is now, apparently, knee
+deep in educational software development at Lucasfilm. Call me selfish, but
+this move is a bit of a waste for a man of his talent, I reckon. Brian left
+Infocom just before Dave Lebling and Steve Meretsky departed signalling the
+beginning of the end of Infocom as an independent development outfit.
+Effectively, ending a classic era of adventuring - the likes of which we
+will never see again (but on the other hand - see below).
+
+The Americans are an enthusiastic lot. But they love to organise their
+enthusiasm in a variety of ways. You may have heard of Star Trek, weird and
+wonderful Guild conventions and conferences. Well, there is such a thing as
+a Game Developer's Conference. This is a regular event which tends to
+attract a great deal of well known designers of "thinking" games. So you
+might see Chris Crawford (Balance of Power), Brian Fargo (The Bards Tale,
+Necromancer etc), Noah Falstein (Battlehawks) and, yes, Brian Moriarty! One
+such conference took place in mid 1989 at the Miltpitas Holiday Inn. During
+this informal gathering (which includes many speakers, a rather tasty meal
+and friendly chat) Brian spoke on the issue of interactive games and then,
+later, about his work in general (specifically about his work on "Trinity"
+but also some points regarding "Wishbringer"). Although taking place many
+moons ago I thought that Probe readers would be interested in what the
+great man had to say.
+
+Sitting Brian down and offering him lots of drinks to keep him still I
+asked Brian how he became a game designer at Infocom.
+
+"Originally, I worked as a technical writer for Analog Computing. Then in
+the spring of '84 I went to Infocom as a microcomputer engineer, to work on
+the interpreters for various micros. I got to be friends with Mike Berlyn,
+Dave Lebling, Stu Galley and all of those people, and I convinced them that
+I was going to hold my breath until they made me a designer. I also had two
+adventure games that had been published in Analog, and they were pretty
+well received, so that helped too."
+
+So where on earth did you get the idea for Wishbringer?
+
+"Actually, the first game I did was Trinity. When I became a games
+designer, Infocom asked me for a synopsis of a game I wanted to do. So I
+wrote the synopsis for Trinity. They looked at it and they all liked it,
+but they said it was too ambitious. Of course, at the time we didn't have
+the Plus system and it would have been very difficult to do that on a
+normal system. Then the marketing people came over and said "Hey, what we
+really want is an introductory game". So I said "Okay, I'll do an
+introductory game. Let's try to think of something neat to put into the
+box."
+
+So contrary to the majority of games design, Wishbringer was actually
+designed from the packaging?
+
+"Yea. I said: "We'll put a magic ring in the box, and we'll do a story
+about a magic ring". But then I said, "Magic rings have already been done,
+and the ring would probably be a plastic one. Why don't we put rocks in the
+box? We could get a cartload of rocks, they'd be cheap, and we'd just put
+one in every box." Later on, after a measure of games planning, the
+marketing person asked, "Why don't we make the rocks glow in the dark,
+since the rock in the game glows?". I said, "Okay, we'll paint the rocks
+with glow-in-the-dark paint." But the marketing person said, "No, the kids
+will come and suck the paint off". So someone suggested that we make rocks.
+Meanwhile, I started to write a game around a glow-in-the-dark rock. That's
+where Wishbringer came from - it came from a plastic rock."
+
+So now you know. Doncha just love trivia? But did Brian enjoy creating
+Wishbringer, especially with his baby, Trinity, sitting in the wings?
+
+"Oh yes, very much. It was nice and it sold really well. It was '85's
+biggest seller for Infocom by far."
+
+Intriguingly, though, Brian stated that a Wishbringer follow-up was on the
+cards - makes you feel depressed doesn't it? However, back to Trinity.
+Where did the idea for that classic come from?
+
+"Actually, I had the idea in '83, when I was working at Analog and writing
+adventures there. It's an idea that I'd had in my head for a long time.
+When the chance came to do it I took the plunge."
+
+So was there anything that set off the specific train of thought that
+brought you to Trinity and what would happen in the game?
+
+"I'd read a lot about that in the past, and I've always been interested in
+that subject. When I started working on the game, I amassed a pretty
+substantial library on the history of the atomic bomb and nuclear weaponry
+in general. In the course of writing the game, I also did some original
+research. I went to the Trinity site itself, visited Los Alamos and a lot
+of museums and I talked to a couple of people who were actually there. So a
+lot of the stuff that happens in Trinity is pretty accurate. I think it was
+the first piece of interactive fiction that attempted to re-create the real
+place and not just simulate a made-up place."
+
+That's all in the New Mexico section of the game?
+
+"The Kensington Gardens are relatively accurate too, except for the
+location called "The Wabe". Every other location there is correct and in
+the right place, I hadn't seen it before I wrote about it but I have seen
+it since. That part was written based on maps and photographs."
+
+So how long did Trinity take to complete?
+
+"It was started in May of '85 and finished in June '86".
+
+How much of that time went into the design and how much went into
+programming?
+
+"As usual, most of it was programming. That's usually the case. I'd say
+that 90% of the time was programming and the other 10% was creative. Our
+development system was still very programming intensive. It didn't do a lot
+for you. It did some things but a lot you had to do for yourself. It was
+quite a bit of drudgery."
+
+So what was the most difficult part of the game to write?
+
+"The hardest part was the fantasy world: the giant sundial and the shadow
+moving across. There was all sorts of factors involved, moving that shadow,
+having it in different rooms, and the doors opening and closing, and then
+having you be able to control it was very tricky."
+
+Was everything mapped out before the coding started?
+
+"I usually do, even today, actually, although not all of the designers did.
+However, when you're making it all up it's easier to do that. The first
+thing I did was sit down and make a map of the Trinity site. It was changed
+about 50 times trying to simplify it and get it down from over 100 rooms to
+the 40 or so rooms that now comprise it. It was a lot more accurate and
+very detailed, but a lot of that detail was totally useless. So I tried to
+boil it down to what was absolutely necessary. That map that comes in the
+package is made from geological surveys and blueprings and is completely
+accurate."
+
+Why write a game that cold be looked upon, by many, as depressing?
+
+"Well, it wasn't a pleasant experience, I can tell you that. It was not
+easy to sit down and write that stuff. As I said I talked to some people
+who were there and I read a lot of books by people who were there and the
+one thing they all said about it, the one common theme is that it was
+inevitable. That if we hadn't of done it, someone else would. They also say
+that that's not the only thing that's inevitable. History has a lot to
+teach us. That's the point of the game, because when you're Wabewalker,
+going through the game, you're literally creating the Book of Hours, you're
+writing your own history."
+
+What statements were you trying to make in Trinity? Did you have a personal
+statement to make?
+
+"I wanted people, when playing the game, to feel their helplessness.
+Because that's what I felt when I was reading and talking to these people
+and seeing these places. You could just feel the weight of history on you.
+Going to the Trinity site and being there and realising what that place
+means, I just wanted people to feel that weight on them when playing the
+game. Have it crush them in the end because that's what I got out of my
+studies and research."
+
+There are a couple of spots in the game where you have to do some
+unpleasant things. Why did you put that in?
+
+"That was deliberate. I was amazed to see how many people were actually
+bothered by the scene with the lizard, because it was them doing it. It's
+nice to know that interactive fiction could do that, make you feel
+uncomfortable about killing things. In no other media could I make you feel
+bad about killing something. Because there is only one medium where I can
+make YOU do it, and make you feel empathy for a thing that doesn't exist.
+It's only with interactive fiction that you can explore these emotions."
+
+When the game was finished how did you feel about it?
+
+"Relieved. As usual. We usually felt that way when a game was finished, but
+I felt especially relieved. It was hard to live with that game for a year.
+But I didn't want people to be scared away from the game. A lot of people
+took a look at the cover and said, "Oh, God, a gloomy game." It isn't
+gloomy, but it does have a dark undertone to it. It's not like it's the end
+of the world. But I'm glad I did Trinity. It was nice to know that
+interactive fiction could make you do things besides give you puzzles and
+make you laugh. It could also make you think and it could deal with big
+issues."
+
+Brian certainly did make us think with the release of Trinity. Nowadays I
+know many of you are thinking, and pining, because we may never see the
+like of Trinity again. However, there is a way to access new material with
+that essential Infocom feel. You'll need a PC or a PC emulator (for those
+with Amiga/ST/Archimedes machines), though. The source is a company called
+Legend, recently created by two ex-Infocom men, Steve Meretsky (creator of
+Hitchhikers Guide to the Galaxy, Leather Goddesses of Phobos, Planetfall
+etc) and Bob Bates (Sherlock and Arthur). The first release, from Steve
+Meretsky, owes much to Leather Goddesses of Phobos. Called "Spellbreaker
+101: Sorcerers Get All the Girls" it is a text/graphic adventure. The game
+is big. The PC version I have contains nine (count 'em!) disks taking up a
+little under four megabytes of code! After loading, the initial screen is
+divided into three sections, although this can be customised, to some
+extent, to your satisfaction. Initially, though, a graphic screen, a text
+message window and a third window chock'a block with verbs, nouns etc
+appears. You can play the game as a straight text adventure, text/graphic
+or as a menu driven adventure (mouse support is given), you can also click
+on the graphics to invoke actions Function keys call other routines such as
+a beautiful, on-screen, auto-map routine, a help feature and so on.
+
+The plot tells us we have just joined Sorcerer University, the game
+revolves around your studies and social activities during your stay there.
+Studies include lessons from the masters themselves, including your new
+found skills in the Simulation Lab. You've also got a mission to complete.
+As Legend say though, "...it's not some cheapo,
+Find-The-Missing-Magic-Sword quest either. Were talking END OF THE WORLD
+type stuff here...". You'll go on field trips to the Island of Horny Women
+and The Restaurant at the End of the Ocean. With your time off you'll meet
+interesting people, in the students union, and go to social clubs such as
+the famous Tappa Kegga Bru. It runs in two modes "Nice" and "Naughty".
+Legend say that the game is R-rated in Naughty Mode.
+
+The game has been selling in the States for a few months, on the PC.
+Microprose USA are distributing it. I believe that Microprose UK will be
+bringing it over here. I have heard no specific news of an Amiga version,
+although rumours say that an Amiga version is "under consideration". Bob
+Bates will be writing the second Legend adventure using the same interface.
+The essence of the story being that you chase a villain through time, from
+1361 BC through to 1940AD. There are nine time periods involved and six
+cities serve as relevant backdrops. Bob Bates, talking from the States,
+commented about its design, "One of the game's attractions is that you'll
+be able to interact with historical characters such as Mussolini, Churchill
+and Hitler. These are the kind of puzzles I like to write, putting objects
+in their native environments, but finding unexpected ways to use them. You
+can go back into the past and do things that will enable you to solve a
+puzzle in the future. That's really a neat part of the game, which is not
+going to be easy (though it will be fair)."
+
+Finally, another piece of Infocom trivia. Many Infocom enthusiasts will
+have heard of the newsletter sent to all registered game owners. Initially
+known as The New Zork Times and, following protests from The New York
+Times, to be later knows as The Status Line, it was filled with news and
+articles relevant to the games, the company and the people in it. However,
+how many of you were aware that another Infocom newsletter existed? This
+particular publication, though, was intended solely for private
+distribution within the company. Known as "InfoDope" it was an underground
+newsletter that came out once and a while with very sarcastic humour. It's
+irregular publication normally being caused by a change in the company.
+Various company people had been lampooned at various times.
+
+Finally, an update on where some of the other Infocom lost sheep have
+disappeared to. Many of the staff are still unaccounted for. Dave Lebling
+was reported to be working on serious software (spreadsheets and the like)
+but what happened to Mark Blanc?
+
+We know that Elizabeth Langosy (an unsung hero in the Infocom team) has
+joined Legend with Steve and Bob at the moment, to do a bit of Quality
+Control. Elizabeth was reportedly working on a Hypercard text/graphic
+adventure when Infocom crashed so maybe the chaps at Legend could use her
+talents for future productions. Also ex-Infocom man, Mike Moore has joined
+Joe Ybarra and Karl Buiter to form a new software house called Sunami
+Productions.
+
